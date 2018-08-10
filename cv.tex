@@ -18,15 +18,21 @@
 \usepackage{calc}
 \def\arraystretch{1.5} % Add nicer padding within tables
 \usepackage{placeins} % FloatBarrier
+\renewcommand{\familydefault}{\sfdefault} % Serif
+% Setting up tables to by default alternate grey and white
+\rowcolors{2}{seaborn_bg_grey}{white}
+\usepackage{longtable}
 
 \author{Edward Linscott}
 \title{Marie Curie Part B2}
 
 \begin{document}
-\begin{table}[h!]
-\sffamily
+\begin{table}[t!]
 \begin{tabularx}{\textwidth}{l X l X}
-\multicolumn{4}{l}{\cellcolor{seaborn_red} \textbf{\textcolor{white}{Curriculum Vitae}}} \\
+\multicolumn{4}{l}{\cellcolor{seaborn_red}} \\[-1.5em]
+\multicolumn{4}{l}{\cellcolor{seaborn_red}%
+\Huge\textbf{\textcolor{white}{Curriculum Vitae}%
+}} \\
 \textit{Name         }  & Edward Baxter Linscott & & \\
 \textit{Nationality  }  & New Zealander          & \textit{Email  } & ebl27@cam.ac.uk\\
 \textit{Date of birth}  & 26/11/1991             & \textit{Website} & \url{https://elinscott.github.io/}\\
@@ -34,49 +40,34 @@
 \end{tabularx}
 \end{table}
 
-\begin{table}[h!]
-\sffamily
+\begin{table}[t!]
 \begin{tabularx}{\textwidth}{l l l l l}
-\multicolumn{5}{l}{\cellcolor{seaborn_blue} \textbf{\textcolor{white}{Education}}} \\
-\rowcolor{white}\textbf{start date} & \textbf{end date} & \textbf{degree/course} & \textbf{institution} & \textbf{grade (if applicable)}\\
+\multicolumn{5}{l}{\cellcolor{seaborn_blue}\large\textbf{\textcolor{white}{Education}}} \\
+\rowcolor{white}\textbf{start date} & \textbf{end date} & \textbf{degree/course} & \textbf{institution} & \textbf{grade}\\
 %
-% STAR
+% PhD
 %
-\rowcolor{seaborn_bg_grey} 1 Feb 2009 & 30 Nov 2009 & STAR Mathematics course & University of Canterbury & A\textsuperscript{+} \\
-\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey} 
-A course equivalent to Canterbury's first-year mathematics programme, but run specifically for accelerated high-school students
+\rowcolor{seaborn_bg_grey}
+1 Oct 2015 & present  & PhD in Physics (in progress) & University of Cambridge & \\
+\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
+   \textit{Title:} ``Describing Correlation Effects in Biological Systems"
+}\\
+\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
+   \textit{Supervisors:} Prof. Mike Payne and Dr. Daniel Cole
+}\\
+\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
+   \textit{Funding:} Cambridge-Rutherford Memorial Scholarship
+}\\
+\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
+Many key reactions in biology are performed by metalloproteins. These systems are a challenge to accurately simulate due to two contrasting reasons. Firstly, the strong correlation present due to the transition metal atoms requires more accurate theories than semi-local density-functional theory. And secondly the ambient protein environment requires explicit treatment of thousands of atoms at the quantum-mechanical level. Over the course of my PhD I developed new linear-response theory for determining Hubbard and Hund's parameters from first principles for DFT\,+\,\emph{U} calculations. I also developed a dynamical mean-field theory module for the linear scaling package ONETEP. I applied these tools to study (a) photodissociation of carboxy-heme (b) the electronic structure of hemocyanin, and (c) water-to-oxygen conversion performed by the oxygen evolving complex.
 } \\
-%
-% BSc
-%
-\rowcolor{white}
-1 Mar 2010 & 10 Nov 2012 &
-\multicolumn{1}{m{0.22\textwidth}}{BSc in Mathematics and Physics} &
-\multicolumn{1}{m{0.22\textwidth}}{University of Cambridge and University of California Berkeley} & Straight A\textsuperscript{+} record\\
-\rowcolor{white}
-\multicolumn{5}{X}{
-A three-year Bachelor's degree with a double-major in mathematics and physics. I spent the final semester of this degree on exchange at Berkeley.
-} \\
-%
-% Hons
-%
-\rowcolor{seaborn_bg_grey} 25 Feb 2013 & 4 Nov 2013 & BSc (Hons) in Physics & University of Otago & First Class\\ 
-\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-    \textit{Title:} ``Non-zero Temperature Theory for Ultra-Cold Dipolar Bose Gases"
-}\\
-\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-   \textit{Supervisor:} Prof. P. Blair Blakie
-}\\
-\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-This one-year honours programme comprised of taught courses in physics and a research project. My research project explored the effects of temperature on the behaviour of quasi-2D dipolar Bose-Einstein condensates; that is, BECs whose atoms (a) interact with an appreciable magnetic dipole-dipole moment and (b) are contained within a 2D optical trap. (See the ``Employment" section for the outcome of this research.)
-}\\
 %
 % Masters
 %
 \rowcolor{white}
 1 Oct 2014
 & 30 Sep 2015
-& \multicolumn{1}{m{0.22\textwidth}}{MPhil in Scientific Computing}
+& \multicolumn{1}{m{0.26\textwidth}}{MPhil in Scientific \mbox{Computing}}
 & University of Cambridge
 & Distinction \\
 \rowcolor{white}
@@ -93,124 +84,67 @@ This one-year honours programme comprised of taught courses in physics and a res
 }\\
 \rowcolor{white}
 \multicolumn{5}{X}{
-Description
+Designed to lead into my PhD, my masters project motivated the need for models of the oxygen-evolving complex (OEC) that are thousands of atoms in size, and demonstrated that such calculations are feasible with the linear scaling density functional theory code ONETEP. The thesis also explored the DFT\,+\,\emph{U} as a method for treating the correlation present in the OEC core.
 } \\
 %
-% PhD
+% Hons
 %
-\rowcolor{seaborn_bg_grey}
-1 Oct 2015 & present  & PhD in Physics (in progress) & University of Cambridge & \\
+\rowcolor{seaborn_bg_grey} 25 Feb 2013 & 4 Nov 2013 & BSc (Hons) in Physics & University of Otago & First Class\\ 
 \multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-   \textit{Title:} ``Describing Correlation Effects in Biological Systems"
+    \textit{Title:} ``Non-zero Temperature Theory for Ultra-Cold Dipolar Bose Gases"
 }\\
 \multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-   \textit{Supervisors:} Prof. Mike Payne and Dr. Daniel Cole
+   \textit{Supervisor:} Prof. P. Blair Blakie
 }\\
 \multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-   \textit{Funding:} Cambridge-Rutherford Memorial Scholarship
+This one-year honours programme comprised of taught courses in physics and a research project. My research project explored the effects of temperature on the behaviour of quasi-2D dipolar Bose-Einstein condensates; that is, BECs whose atoms (a) interact with an appreciable magnetic dipole-dipole moment and (b) are contained within a 2D optical trap. (See the ``Employment" section for the outcome of this research.)
 }\\
-\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey}
-Description
+%
+% BSc
+%
+\rowcolor{white}
+1 Mar 2010 & 10 Nov 2012 &
+\multicolumn{1}{m{0.26\textwidth}}{BSc in Mathematics and Physics} &
+\multicolumn{1}{m{0.25\textwidth}}{University of \mbox{Cambridge} and University of \mbox{California} Berkeley} & Straight A\textsuperscript{+}'s\\
+\rowcolor{white}
+\multicolumn{5}{X}{
+A three-year Bachelor's degree with a double-major in mathematics and physics. I spent the final semester of this degree on exchange at Berkeley.
+} \\
+%
+% STAR
+%
+\rowcolor{seaborn_bg_grey} 1 Feb 2009 & 30 Nov 2009 & STAR Mathematics course & University of Canterbury & A\textsuperscript{+} \\
+\multicolumn{5}{X}{\rowcolor{seaborn_bg_grey} 
+A course equivalent to Canterbury's first-year mathematics programme, but run specifically for accelerated high-school students
 }
 \end{tabularx}
 \end{table}
 %}
 
-\begin{table}[h!]
-\sffamily
-\begin{tabularx}{\textwidth}{m{0.2\textwidth} l l l}
-%
-% Qualifying degree
-%
-\multicolumn{4}{l}{\cellcolor{seaborn_blue} \textbf{\textcolor{white}{Academic qualifications counting towards the Total Full time postgraduate research experience}}} \\
-\rowcolor{white}
-\textbf{University degree giving access to PhD} & \textbf{Institution name and country} & \multicolumn{2}{l}{\textbf{Date of Award}} \\
-\rowcolor{white}
-BSc(Hons)          & University of Otago, New Zealand & 14 Dec 2013 &\\
-%
-% Masters
-%
-\rowcolor{seaborn_bg_grey}
-\textbf{Subsequent university degree(s) or master(s)} & \textbf{Insitution name and country} & \textbf{From} & \textbf{To} \\
-\rowcolor{seaborn_bg_grey}
-MPhil
-& \multicolumn{1}{m{0.3\textwidth}}{University of Cambridge, United Kingdom}
-& 1 Oct 2014
-& 30 Sep 2015 \\
-\rowcolor{seaborn_bg_grey}
-& \multirow{2}{*}{\textbf{Full time research experience}}
-& \multicolumn{1}{m{0.2\textwidth}}{\textbf{Proportion research-based}}
-& \multicolumn{1}{m{0.2\textwidth}}{\textbf{Duration of research activities}} \\
-\rowcolor{seaborn_bg_grey}
-& & 75\% & 9 months \\
-%
-% PhD
-%
-\rowcolor{white}
-\textbf{Doctorate} & \textbf{Insitution name and country} & \textbf{From} & \textbf{To (expected)} \\
-\rowcolor{white}
-& \multicolumn{1}{m{0.3\textwidth}}{University of Cambridge, United Kingdom}
-& 1 Oct 2015
-& 31 March 2019 \\
-\rowcolor{white}
-& \multirow{2}{*}{\textbf{Full time research experience}} &
-& \multicolumn{1}{m{0.2\textwidth}}{\textbf{Duration of research activities}} \\
-\rowcolor{white}
-& & & 42 months \\
-%
-% Research assistant
-%
-\rowcolor{seaborn_bg_grey}
-\multicolumn{4}{l}{\textbf{Other research activities counting towards the total full-time postgraduate research experience}} \\
-\rowcolor{seaborn_bg_grey}
-\textbf{Position} & \textbf{Insititution Name and country} & \textbf{From} & \textbf{To} \\
-\rowcolor{seaborn_bg_grey}
-Research Assistant & University of Otago, New Zealand & 01/03/2014 & 31/07/2014 \\
-\rowcolor{seaborn_bg_grey}
-& \multirow{2}{*}{\textbf{Full time research experience}} 
-& 
-& \multicolumn{1}{m{0.2\textwidth}}{\textbf{Duration of research activities}} \\
-\rowcolor{seaborn_bg_grey}
-& & & 5 months \\
-%
-% Total
-%
-\rowcolor{white}
-\multicolumn{3}{l}{\textbf{Total full-time postgraduate research experience}} 
-& \textbf{56 months} \\
-\end{tabularx}
-\end{table}
 
-\begin{table}[h!]
-\sffamily
+\begin{table}[t!]
 \begin{tabularx}{\textwidth}{l l l l}
-\multicolumn{4}{l}{\cellcolor{seaborn_blue} \textbf{\textcolor{white}{Professional Experience}}} \\
+\multicolumn{4}{l}{\cellcolor{seaborn_blue}\large\textbf{\textcolor{white}{Professional Experience}}} \\
 \rowcolor{white}
 \textbf{start date} & \textbf{end date} & \textbf{job title} & \textbf{institution} \\
-% 21 Nov 2011 & 30 Jan 2012 & Summer Studentship & University of Otago \\
-% \multicolumn{4}{|m{\columnwidth}|}{
-% \begin{minipage}{\columnwidth}
-% \vspace{6pt}
-% I spent a summer in a studentship with an engineering/physics/medical research group developing new computed tomography (CT) scanning technology. I was involved in developing software that allowed the research team to quantify the quality of their images (and hence assess the performance of their machines during development). \\
-% 
-% \vspace{6pt}
-% \end{minipage}
-% } \\
-% \hline
 \rowcolor{seaborn_bg_grey}
 1 Mar 2013 & 31 July 2013 & Research Assistant & University of Otago \\
 \rowcolor{seaborn_bg_grey}
 \multicolumn{4}{X}{
 I was briefly employed as a Research Assistant at the University of Otago, where I continued the work from my honours year studying the behaviour of dipolar Bose gases. This work resulted in a publication where we predicted an instability of dipolar BECs in regions of experimental interest.
 } \\
+\rowcolor{white}
+21 Nov 2011 & 30 Jan 2012 & Summer Studentship & University of Otago \\
+\rowcolor{white}
+\multicolumn{4}{X}{
+I spent a summer in a studentship with an engineering/physics/medical research group developing new computed tomography (CT) scanning technology. I was involved in developing software that allowed the research team to quantify the quality of their images (and hence assess the performance of their machines during development).} \\
 \end{tabularx}
 \end{table}
 
-\begin{table}[h!]
-\sffamily
+\begin{table}[t!]
 \begin{tabularx}{\textwidth}{X l}
 \rowcolor{seaborn_blue}
-\multicolumn{2}{l}{\textcolor{white}{\textbf{Publications}}} \\
+\multicolumn{2}{l}{\large\textcolor{white}{\textbf{Publications}}} \\
 EBL and P.\,B.\,Blakie, \textit{Thermally activated local collapse of a flattened dipolar condensate}. Phys. Rev.~A 90 (2014) 053605 & 
 \multicolumn{1}{m{0.2\textwidth}}{4 citations; selected as an Editors' Suggestion} \\
 EBL, D.\,J.\,Cole, M.\,C.\,Payne, and D.\,D.\,O'Regan, \textit{The role of spin in the calculation of Hubbard U and Hund’s J parameters from first principles}. & under review \\
@@ -219,11 +153,10 @@ M.\,A.\,al-Badri, EBL, D.\,J.\,Cole, and C.\,Weber, \textit{Renormalization of h
 \end{tabularx}
 \end{table}
 
-\begin{table}[h!]
-\sffamily
+\begin{table}[t!]
 \begin{tabularx}{\textwidth}{l m{0.9\textwidth}}
 \rowcolor{seaborn_blue}
-\multicolumn{2}{l}{\textcolor{white}{\textbf{Scholarships, Awards, And Prizes}}} \\
+\multicolumn{2}{l}{\large\textcolor{white}{\textbf{Scholarships, Awards, And Prizes}}} \\
 \multicolumn{2}{l}{\textbf{\textit{Postgraduate}}} \\
 {2016} & \textit{Poster prize} at CCP9 Young Researchers' Event \\
 {2014} & \textit{LB Wood Scholarship} to supplement an existing scholarship for postgraduate study in Britain \\
@@ -236,6 +169,10 @@ M.\,A.\,al-Badri, EBL, D.\,J.\,Cole, and C.\,Weber, \textit{Renormalization of h
        & \textit{The Alumni of the University of Otago in America Inc. Award} to support an academic exchange to the United States\\
 {2011} & \textit{Robert Jack / Institute of Physics Prize} for the top student in 200-level physics\\
        & \textit{Gloria Olive Memorial Prize in Mathematics} for the top student in 300-level mathematics\\
+\end{tabularx}
+\end{table}
+\begin{table}[t!]
+\begin{tabularx}{\textwidth}{l m{0.9\textwidth}}
 {2010} & \textit{Alumni Annual Appeal Scholarship} for study at the University of Otago\\
        & \textit{University of Otago Dux Scholarship} for study at the University of Otago\\
        & \textit{University of Canterbury Dux Scholarship} for study at the University of Canterbury\\
@@ -254,11 +191,10 @@ M.\,A.\,al-Badri, EBL, D.\,J.\,Cole, and C.\,Weber, \textit{Renormalization of h
 \end{tabularx}
 \end{table}
 
-\begin{table}[!h]
-\sffamily
+\begin{table}[!t]
 \begin{tabularx}{\textwidth}{l m{0.6\columnwidth} l l}
 \rowcolor{seaborn_blue}
-\multicolumn{4}{l}{\textcolor{white}{\textbf{Conferences, Schools, and Workshops}}} \\
+\multicolumn{4}{l}{\large\textcolor{white}{\textbf{Conferences, Schools, and Workshops}}} \\
 \textbf{Year}& \textbf{Event} & \textbf{Location} & \textbf{Contribution} \\
 {2018}
 & Autumn School on Correlated Electrons & J\"ulich & Poster \\
@@ -280,11 +216,10 @@ M.\,A.\,al-Badri, EBL, D.\,J.\,Cole, and C.\,Weber, \textit{Renormalization of h
 \end{tabularx}
 \end{table}
 %
-\begin{table}[!h]
-\sffamily
+\begin{table}[!t]
 \begin{tabularx}{\textwidth}{l l l}
 \rowcolor{seaborn_blue}
-\multicolumn{3}{l}{\textcolor{white}{\textbf{Skills}}} \\
+\multicolumn{3}{l}{\large\textcolor{white}{\textbf{Skills}}} \\
 \rowcolor{white}
 \textbf{\textit{Programming}} & \\
 \rowcolor{white}
@@ -294,9 +229,9 @@ Used monthly & MPI, OpenMP & \\
 \rowcolor{white}
 Some experience & C++, MATLAB, CUDA & \\
 \rowcolor{white}
-\multicolumn{3}{X}{I am a developer of ONETEP, a commercially available scientific DFT code, and TOSCAM, a publically available DMFT code} \\
+\multicolumn{3}{X}{I am a developer of \href{https://www.onetep.org}{ONETEP}, a commercially available scientific DFT code, and TOSCAM, a publically available DMFT code} \\
 \rowcolor{white}
-\multicolumn{3}{X}{I participated in Google Hash Code 2018, on ProjectEuler and CodinGame} \\
+\multicolumn{3}{X}{I participated in \href{https://hashcode.withgoogle.com/}{Google Hash Code 2018}, as well as sporadically competing on \href{https://projecteuler.net/}{Project Euler} and \href{https://www.codingame.com/home}{CodinGame}} \\
 \rowcolor{seaborn_bg_grey} 
 \multicolumn{3}{X}{\textbf{\textit{Packages and Software}}} \\
 \rowcolor{seaborn_bg_grey}
@@ -330,25 +265,23 @@ Some experience & CASTEP, Siesta, Maestro & \\
 \rowcolor{seaborn_bg_grey}
 \multicolumn{3}{X}{I have spent a significant amount of time with M.\,A.\,Al-Badri (Masters, and then PhD student from King's College London), teaching him about DMFT and working with him on DMFT calculations on hemocyanin. I have hosted him in Cambridge twice, and visited him at KCL repeatedly.} \\
 \rowcolor{seaborn_bg_grey}
-\multicolumn{3}{X}{I have been the local port-of-call for S. Mansour (PhD student, Cambridge) regarding ONETEP, and have periodically helped her with her work}
+\multicolumn{3}{X}{I have been the local port-of-call for S. Mansour (PhD student, Cambridge) regarding ONETEP, and have periodically helped her with her work.}
 \end{tabularx}
 \end{table}
 %
 
-\begin{table}[!h]
-\sffamily
+\begin{table}[!t]
 \begin{tabularx}{\textwidth}{X}
 \rowcolor{seaborn_blue}
-\multicolumn{1}{l}{\textcolor{white}{\textbf{Interests}}} \\
+\multicolumn{1}{l}{\large\textcolor{white}{\textbf{Interests}}} \\
 I am a violinist, and have been a member (and concertmaster) of many orchestras including the New Zealand Symphony Secondary Schools Orchestra, the Christchurch Youth Orchestra, and the Cambridge Musical Society Symphony Orchestra. I love the outdoors and am an avid runner, cyclist, camper, and hiker.
 \end{tabularx}
 \end{table}
 %
-\begin{table}[!h]
-\sffamily
+\begin{table}[!t]
 \begin{tabularx}{\textwidth}{X X}
 \rowcolor{seaborn_blue}
-\multicolumn{2}{l}{\textcolor{white}{\textbf{Referees}}} \\
+\multicolumn{2}{l}{\large\textcolor{white}{\textbf{Referees}}} \\
 Prof. Mike Payne                   & Prof. P. Blair Blakie \\
 Room 528, Mott Building            & Room 420, Science III\\ 
 Cavendish Laboratory               & Department of Physics \\
