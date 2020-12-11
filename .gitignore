@@ -1,6 +1,10 @@
 old_CVs
 *.swp
-cv.aux
-cv.log
-cv.out
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
 *.pdf
+*.fdb_latexmk
+*.fls
