@@ -5,6 +5,5 @@ old_CVs
 *.out
 *.bbl
 *.blg
-*.pdf
 *.fdb_latexmk
 *.fls
