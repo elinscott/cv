@@ -38,52 +38,57 @@
       m{\dimexpr0.35\textwidth-2\tabcolsep}%
       m{\dimexpr0.15\textwidth-2\tabcolsep}%
       m{\dimexpr0.35\textwidth-2\tabcolsep}}
-   \multicolumn{4}{l}{\cellcolor{seaborn_red}}                                                             \\[-1.5em]
+   \multicolumn{4}{l}{\cellcolor{seaborn_red}}                                                                                   \\[-1.5em]
    \multicolumn{4}{l}{\cellcolor{seaborn_red}%
       \Huge\textbf{\textcolor{seaborn_bg_grey_half}{Curriculum Vitae}%
-      }}                                                                                                   \\
-   \textit{Name         } & Edward Baxter Linscott &                  &                                    \\
-   \textit{Nationality  } & New Zealander          & \textit{Email  } & edward.linscott@epfl.ch            \\
+      }}                                                                                                                         \\
+   \textit{Name         } & Edward Baxter Linscott &                  &                                                          \\
+   \textit{Nationality  } & New Zealander          & \textit{Email  } & edward.linscott@epfl.ch                                  \\
    \textit{Date of birth} & 26/11/1991             & \textit{Website} & \href{https://elinscott.github.io/}{elinscott.github.io} \\
 \end{tabularx}
 
-% \begin{tabularx}{\textwidth}{l}
-%    \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Summary}} \\
-%    text here
-% \end{tabularx}
+\begin{tabularx}{\textwidth}{X}
+   \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Research overview}} \\
+   Broadly, I am interested in how we can improve the performance of density functional theory (DFT). Inspired by known properties of the exact functional and the systemic errors of DFT, one can construct inexpensive corrections to DFT that drastically improve its performance.
+
+   Most recently, I have developed the \texttt{koopmans} code, a package that implements Koopmans functionals. By imposing a generalized piecewise energy condition, these functionals obtain spectral properties with comparable accuracy to GW at a fraction of the cost.
+
+   I am now looking for opportunities to extend this line of research, both by continuing to push theoretical and computational developments, and by capitalizing on our existing theories to study systems of scientific interest (e.g. novel photovoltaics).
+\end{tabularx}
 
 \setlength{\fboxsep}{5pt}%
 \setlength{\fboxrule}{0pt}
 
 \begin{tabularx}{\textwidth}{X}
-   \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Research and Education}}                                                                                                                                                                                                                                                                         \\
+   \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Research and Education}} \\
    \rowcolor{seaborn_bg_grey_half}%
-      \hbox{%
+   \hbox{%
       \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.7cm]{logos/epfl_trimmed.png}}}
       \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-         École polytechnique fédérale de Lausanne \\ Switzerland
-      \end{minipage}}
-      }
-      \\
+            École polytechnique fédérale de Lausanne \\ Switzerland
+         \end{minipage}}
+   }
+   \\
    \rowcolor{seaborn_bg_grey_half}%
-   \textbf{Postdoctoral researcher (1 Nov 2019 -- present)}                                                                                                                                                                                                                                                                                                                \\
+   \textbf{Postdoctoral researcher (1 Nov 2019 -- present)}                                        \\
    \rowcolor{seaborn_bg_grey_half}%
    \textit{Supervisor:} Prof. Nicola Marzari
    \\
    \rowcolor{seaborn_bg_grey_half}%
-   I am currently a postdoc in the group of Prof. Nicola Marzari. I am working on developing Koopmans spectral functionals for addressing systematic errors in density functional theory.
+   The goal of my current postdoc is to drive the ongoing development of Koopmans functionals. To this end, I have been one of the main developers of the \texttt{koopmans} code, a package that (a) implements Koopmans functionals in \texttt{Quantum ESPRESSO} and (b) automates the various workflows that these functionals require.
    \\
    %
    % PhD
    %
    \rowcolor{seaborn_bg_grey}
-      \hbox{%
+   \hbox{%
       \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/cambridge_trimmed.png}}}
       \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-         University of Cambridge \\ United Kingdom
-      \end{minipage}}
-      } \\
-   \textbf{PhD in Physics (1 Oct 2015 -- 26 Oct 2019)}                                                                                                                                                                                                                                                                                                                     \\
+            University of Cambridge \\ United Kingdom
+         \end{minipage}}
+   }                                                                                               \\
+   \rowcolor{seaborn_bg_grey}
+   \textbf{PhD in Physics (1 Oct 2015 -- 26 Oct 2019)}                                             \\
    \cellcolor{seaborn_bg_grey}%
    \noindent \textit{Title:} ``Describing Correlation Effects in Biological Systems"
    \\
@@ -94,7 +99,7 @@
    \textit{Funding:} Cambridge-Rutherford Memorial Scholarship (valued at approx.\ \euro{}150,000; competitively awarded)
    \\
    \cellcolor{seaborn_bg_grey}%
-   Many key reactions in biology are performed by metalloproteins. These systems are a challenge to accurately simulate due to two contrasting reasons. Firstly, the strong correlation present due to the transition metal atoms requires more accurate theories than semi-local density-functional theory. And secondly the ambient protein environment requires explicit treatment of thousands of atoms at the quantum-mechanical level. Over the course of my PhD I developed novel approaches within linear-response theory for determining Hubbard and Hund's parameters from first principles for DFT\,+\,\emph{U} calculations. I also developed a dynamical mean-field theory module for the linear scaling package ONETEP. I applied these tools to study (a) photodissociation of carboxy-heme (b) the electronic structure of hemocyanin, and (c) water-to-oxygen conversion performed by the oxygen evolving complex.
+   Many key reactions in biology are performed by metalloproteins. These systems are a challenge to accurately simulate due to two contrasting reasons. Firstly, the strong correlation present due to the transition metal atoms requires more accurate theories than semi-local DFT. And secondly the ambient protein environment requires explicit treatment of thousands of atoms at the quantum-mechanical level. Over the course of my PhD I developed novel approaches within linear-response theory for determining Hubbard and Hund's parameters from first principles for DFT\,+\,\emph{U} calculations. I also developed a dynamical mean-field theory module for the linear scaling package ONETEP. I applied these tools to study (a) photodissociation of carboxy-heme (b) the electronic structure of hemocyanin, and (c) water-to-oxygen conversion performed by the oxygen evolving complex.
    \\
    %
    % Masters
@@ -118,27 +123,27 @@
 
    Designed to lead into my PhD, my masters project motivated the need for models of the oxygen-evolving complex (OEC) that are thousands of atoms in size, and demonstrated that such calculations are feasible with the linear scaling density functional theory code ONETEP. The thesis also explored the DFT\,+\,\emph{U} as a method for treating the correlation present in the OEC core.
    \\
-   \end{tabularx}
-   \newpage
+\end{tabularx}
+\newpage
 \begin{tabularx}{\textwidth}{X}
    \rowcolor{seaborn_bg_grey_half}
-      \hbox{%
+   \hbox{%
       \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/otago_trimmed.png}}}
       \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-         University of Otago \\ New Zealand
-      \end{minipage}}
-      } \\
+            University of Otago \\ New Zealand
+         \end{minipage}}
+   }                                                                                                                                                                                                                                                                                                                                                            \\
    \rowcolor{seaborn_bg_grey_half}
-   \textbf{Research Assistant (1 Mar 2014 -- 31 July 2014)} \\
+   \textbf{Research Assistant (1 Mar 2014 -- 31 July 2014)}                                                                                                                                                                                                                                                                                                     \\
    \cellcolor{seaborn_bg_grey_half}%
    \textit{Supervisor:} Prof. P. Blair Blakie
    \\
    \rowcolor{seaborn_bg_grey_half}
-   I was briefly employed as a Research Assistant at the University of Otago, where I continued the work from my honours year studying the behaviour of dipolar Bose gases. This work resulted in a publication where we predicted an instability of dipolar BECs in regions of experimental interest.                                                                     \\
+   I was briefly employed as a Research Assistant at the University of Otago, where I continued the work from my honours year studying the behaviour of dipolar Bose gases. This work resulted in a publication where we predicted an instability of dipolar BECs in regions of experimental interest.                                                          \\
    %
    % Hons
    %
-   \rowcolor{seaborn_bg_grey_half} \textbf{BSc (Hons) in Physics (25 Feb 2013 -- 4 Nov 2013)}                                                                                                                                                                                                                                                                                   \\
+   \rowcolor{seaborn_bg_grey_half} \textbf{BSc (Hons) in Physics (25 Feb 2013 -- 4 Nov 2013)}                                                                                                                                                                                                                                                                   \\
    \cellcolor{seaborn_bg_grey_half}%
    \textit{Title:} ``Non-zero Temperature Theory for Ultra-Cold Dipolar Bose Gases"
    \\
@@ -152,32 +157,32 @@
    % BSc
    %
    \rowcolor{seaborn_bg_grey}
-      \hbox{%
+   \hbox{%
       \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/berkeley_trimmed.png}}}
       \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-         University of California, Berkeley \\ United States of America
-      \end{minipage}}
-      } \\
+            University of California, Berkeley \\ United States of America
+         \end{minipage}}
+   }                                                                                                                                                                                                                                                                                                                                                            \\
    \rowcolor{seaborn_bg_grey}
-   \textbf{Exchange (16 Aug 2012 -- 14 Dec 2012)}                                                                                                                                                                                                                                                                                                                          \\
+   \textbf{Exchange (16 Aug 2012 -- 14 Dec 2012)}                                                                                                                                                                                                                                                                                                               \\
    \cellcolor{seaborn_bg_grey}%
    I spent the final semester of my BSc (see below) on exchange at Berkeley.
    \\
    \rowcolor{seaborn_bg_grey_half}
-      \hbox{%
+   \hbox{%
       \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/otago_trimmed.png}}}
       \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-         University of Otago \\ New Zealand
-      \end{minipage}}
-      } \\
+            University of Otago \\ New Zealand
+         \end{minipage}}
+   }                                                                                                                                                                                                                                                                                                                                                            \\
    \rowcolor{seaborn_bg_grey_half}
    \rowcolor{seaborn_bg_grey_half}
-   \textbf{BSc in Mathematics and Physics (1 Mar 2010 -- 10 Nov 2012)} \\
+   \textbf{BSc in Mathematics and Physics (1 Mar 2010 -- 10 Nov 2012)}                                                                                                                                                                                                                                                                                          \\
    \cellcolor{seaborn_bg_grey_half}%
    A three-year Bachelor's degree with a double-major in mathematics and physics. I obtained straight A\textsuperscript{+} grades throughout.
    \\
    \rowcolor{seaborn_bg_grey_half}
-   \textbf{Summer studentship (21 Nov 2011 -- 30 Jan 2012)}                                                                                                                                                                                                                                                                                                                \\
+   \textbf{Summer studentship (21 Nov 2011 -- 30 Jan 2012)}                                                                                                                                                                                                                                                                                                     \\
    \rowcolor{seaborn_bg_grey_half}
    During my undergraduate studies I spent a summer in a studentship with a interdisciplinary research group developing new computed tomography (CT) scanning technology. I was involved in developing software that allowed the research team to quantify the quality of their images (and hence assess the performance of their machines during development). \\
 \end{tabularx}
