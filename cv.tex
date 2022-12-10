@@ -33,27 +33,50 @@
 \title{Marie Curie Part B2}
 
 \begin{document}
-\begin{tabularx}{\textwidth}{
-      m{\dimexpr0.15\textwidth-2\tabcolsep}%
-      m{\dimexpr0.35\textwidth-2\tabcolsep}%
-      m{\dimexpr0.15\textwidth-2\tabcolsep}%
-      m{\dimexpr0.35\textwidth-2\tabcolsep}}
-   \multicolumn{4}{l}{\cellcolor{seaborn_red}}                                                                                   \\[-1.5em]
-   \multicolumn{4}{l}{\cellcolor{seaborn_red}%
-      \Huge\textbf{\textcolor{seaborn_bg_grey_half}{Curriculum Vitae}%
-      }}                                                                                                                         \\
-   \textit{Name         } & Edward Baxter Linscott &                  &                                                          \\
-   \textit{Nationality  } & New Zealander          & \textit{Email  } & edward.linscott@epfl.ch                                  \\
-   \textit{Date of birth} & 26/11/1991             & \textit{Website} & \href{https://elinscott.github.io/}{elinscott.github.io} \\
-\end{tabularx}
+   \hbox{%
+   \raisebox{-0.535\height}{\includegraphics[width=0.12\textwidth]{mugshot.jpg}}%
+   \hspace{0.017\textwidth}
+   \begin{minipage}{0.856\textwidth}
+   \begin{tabularx}{\textwidth}{
+         m{\dimexpr0.175\textwidth-2\tabcolsep}%
+         m{\dimexpr0.325\textwidth-2\tabcolsep}%
+         m{\dimexpr0.175\textwidth-2\tabcolsep}%
+         m{\dimexpr0.325\textwidth-2\tabcolsep}}
+      \multicolumn{4}{l}{\cellcolor{seaborn_red}}                                                                                   \\[-1.5em]
+      \multicolumn{4}{l}{\cellcolor{seaborn_red}%
+         \Huge\textbf{\textcolor{seaborn_bg_grey_half}{Edward Linscott}%
+         }}                                                                                                                         \\
+      \textit{Nationality  } & New Zealander          & \textit{Email  } & edward.linscott@epfl.ch                                  \\
+      \textit{Date of birth} & 26/11/1991             & \textit{Website} & \href{https://elinscott.github.io/}{elinscott.github.io} \\
+      & & \textit{Phone} & +41 79 678 9641
+   \end{tabularx}
+   \end{minipage}
+   }
 
 \begin{tabularx}{\textwidth}{X}
-   \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Research overview}} \\
-   Broadly, I am interested in how we can improve the performance of density functional theory (DFT). Inspired by known properties of the exact functional and the systemic errors of DFT, one can construct inexpensive corrections to DFT that drastically improve its performance.
+   \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Summary}} \\
+   I am currently a postdoctoral researcher at EPFL in the group of Prof.\ Nicola Marzari. Career highlights thus far include...
+   \vspace{6pt}
 
-   Most recently, I have developed the \href{https://koopmans-functionals.org/}{koopmans} code, a package that implements Koopmans functionals. By imposing a generalized piecewise energy condition, these functionals obtain spectral properties with comparable accuracy to GW at a fraction of the cost.
+   -- Successful undergraduate studies culminating in receiving (a) the \textit{Prince of Wales Award} for the most outstanding student completing an undergraduate degree at the University of Otago, and (b) the \textit{Cambridge-Rutherford Memorial Scholarship} to enable doctoral studies at the University of Cambridge.
+   \vspace{6pt}
 
-   I am now looking for opportunities to extend this line of research, both by continuing to push theoretical and computational developments, and by capitalizing on our existing theories to study systems of scientific interest (e.g. novel photovoltaics).
+   -- Completing a masters and PhD at the University of Cambridge, during which I developed methods and code associated with DFT+\emph{U} and dynamical mean field theory.
+   \vspace{6pt}
+
+   -- The development and release of the \href{https://koopmans-functionals.org/}{koopmans} code, a package that implements Koopmans functionals. I am the lead author of this code.% By imposing a generalized piecewise energy condition, these functionals obtain spectral properties with comparable accuracy to GW at a fraction of the computational cost.
+   \vspace{6pt}
+
+   -- Supervising Yannick Schubert for his master's project and thesis. He said that ``working with (Edward) was very motivating and the perfect start to a scientific career''.
+   \vspace{6pt}
+
+   -- The development of the BLOR functional, a DFT+\emph{U}-type corrective functional that enforces the flat plane condition on localized subspaces, dispensing with the need for an ad hoc derivation from the Hubbard model
+   \vspace{6pt}
+
+   Broadly, my research investigates how we can improve the performance of density functional theory (DFT). Inspired by known properties of the exact functional and the systemic errors of DFT, one can construct inexpensive corrections to DFT that drastically improve its performance.
+   \vspace{6pt}
+
+   I am now looking for further opportunities where I can apply my expertise in density functional approximation development and my coding skills.
 \end{tabularx}
 
 \setlength{\fboxsep}{5pt}%
@@ -76,6 +99,8 @@
    \\
    \rowcolor{seaborn_bg_grey_half}%
    The goal of my current postdoc is to drive the ongoing development of Koopmans functionals. To this end, I have been one of the main developers of the \href{https://koopmans-functionals.org/}{koopmans} code, a package that (a) implements Koopmans functionals in \texttt{Quantum ESPRESSO} and (b) automates the various workflows that these functionals require.
+
+   Discuss BLOR
    \\
    %
    % PhD
@@ -99,8 +124,11 @@
    \textit{Funding:} Cambridge-Rutherford Memorial Scholarship (valued at approx.\ \euro{}150,000; competitively awarded)
    \\
    \cellcolor{seaborn_bg_grey}%
-   Many key reactions in biology are performed by metalloproteins. These systems are a challenge to accurately simulate due to two contrasting reasons. Firstly, the strong correlation present due to the transition metal atoms requires more accurate theories than semi-local DFT. And secondly the ambient protein environment requires explicit treatment of thousands of atoms at the quantum-mechanical level. Over the course of my PhD I developed novel approaches within linear-response theory for determining Hubbard and Hund's parameters from first principles for DFT\,+\,\emph{U} calculations. I also developed a dynamical mean-field theory module for the linear scaling package ONETEP. I applied these tools to study (a) photodissociation of carboxy-heme (b) the electronic structure of hemocyanin, and (c) water-to-oxygen conversion performed by the oxygen evolving complex.
-   \\
+   % Many key reactions in biology are performed by metalloproteins. These systems are a challenge to accurately simulate due to two contrasting reasons. Firstly, the strong correlation present due to the transition metal atoms requires more accurate theories than semi-local DFT. And secondly the ambient protein environment requires explicit treatment of thousands of atoms at the quantum-mechanical level.
+   Over the course of my PhD I developed novel approaches within linear-response theory for determining Hubbard and Hund's parameters from first principles for DFT\,+\,\emph{U} calculations. I also developed a dynamical mean-field theory module for the linear scaling package ONETEP. I applied these tools to study (a) photodissociation of carboxy-heme (b) the electronic structure of hemocyanin, and (c) water-to-oxygen conversion performed by the oxygen evolving complex.
+\end{tabularx}
+\newpage
+\begin{tabularx}{\textwidth}{X}
    %
    % Masters
    %
@@ -123,9 +151,6 @@
 
    Designed to lead into my PhD, my masters project motivated the need for models of the oxygen-evolving complex (OEC) that are thousands of atoms in size, and demonstrated that such calculations are feasible with the linear scaling density functional theory code ONETEP. The thesis also explored the DFT\,+\,\emph{U} as a method for treating the correlation present in the OEC core.
    \\
-\end{tabularx}
-\newpage
-\begin{tabularx}{\textwidth}{X}
    \rowcolor{seaborn_bg_grey_half}
    \hbox{%
       \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/otago_trimmed.png}}}
@@ -184,10 +209,68 @@
    \rowcolor{seaborn_bg_grey_half}
    \textbf{Summer studentship (21 Nov 2011 -- 30 Jan 2012)}                                                                                                                                                                                                                                                                                                     \\
    \rowcolor{seaborn_bg_grey_half}
-   During my undergraduate studies I spent a summer in a studentship with a interdisciplinary research group developing new computed tomography (CT) scanning technology. I was involved in developing software that allowed the research team to quantify the quality of their images (and hence assess the performance of their machines during development). \\
+   A ten-week studentship in an interdisciplinary research group developing new computed tomography (CT) scanning technology. I wrote code to quantify the quality of their scans.\\
 \end{tabularx}
 %}
 
+\newpage
+\begin{tabularx}{\textwidth}{l l l}
+   \rowcolor{seaborn_blue}
+   \multicolumn{3}{l}{\textcolor{seaborn_bg_grey_half}{\textbf{Skills}}}                                                                                                                                                                                                                                                                                                   \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   \textbf{\textit{Programming}} &                                                                                                                                                                        &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   Used daily                    & Python, Fortran,  Bash                                                                                                                                                  &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   Used monthly                  & MPI, OpenMP                                                                                                                                                            &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   Some experience               & C++, MATLAB, CUDA                                                                                                                                                      &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I developed \href{https://koopmans-functionals.org}{koopmans}, an open-source package for performing Koopmans functional calculations. I am a contributor to \href{https://www.onetep.org}{ONETEP}, a commercially available scientific DFT code, and I am a developer of TOSCAM, a publically available DMFT code}       \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}In addition to my formal training in scientific computing, during my PhD I sat in on \href{https://www.cl.cam.ac.uk/teaching/1718/L42/}{\emph{Machine Learning and Algorithims for Data Mining}}, a master's course on machine learning run by the Department of Computer Science and Technology at the University of Cambridge.}                                                            \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I have participated in coding competitions such as \href{https://hashcode.withgoogle.com/}{Google Hash Code}, \href{https://projecteuler.net/}{Project Euler}, and \href{https://www.codingame.com/home}{CodinGame}}                                                                                                         \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}\textbf{\textit{Packages and software}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey_half}
+   Used daily                    & \multicolumn{2}{l}{vscode, Quantum ESPRESSO, ASE, vim, \LaTeX, SLURM, git                                                                                                                         }                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey_half}
+   Used monthly                  & PyMol, VMD, ONETEP, TOSCAM, VESTA, spglib                                                                                                                              &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey_half}
+   Some experience               & CASTEP, Siesta, Maestro                                                                                                                                                &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   \textbf{\textit{Teaching}}    &                                                                                                                                                                        &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   2021-22
+                                 & \multicolumn{1}{m{0.5\textwidth}}{Lab demonstrator for master's course in atomistic and quantum simulation of materials}
+                                 & EPFL                                                                                                                                                                                                                                                                                                                                    \\\noalign{\vskip-0.1pt}
+   \noalign{\vskip-0.1pt} \rowcolor{seaborn_bg_grey}
+   2017
+                                 & \multicolumn{1}{m{0.5\textwidth}}{Supervised ten third-year students for thermal and statistical physics}
+                                 & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   2016
+                                 & \multicolumn{1}{m{0.5\textwidth}}{Supervised nine second-year students for experimental methods, oscillations, waves, optics, quantum mechanics, and condensed matter}
+                                 & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   2015
+                                 & \multicolumn{1}{m{0.5\textwidth}}{Supervised nine first-year students for physics}
+                                 & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   2013
+                                 & \multicolumn{1}{m{0.5\textwidth}}{Lab demonstrator, university tutor, and private tutor for first-year biological physics}
+                                 & University of Otago                                                                                                                                                                                                                                                                                                                     \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey_half}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}\textbf{\textit{Supervision and mentoring}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}During my postdoc I have supervised the Masters project and dissertation of Yannick Schubert. He said that ``thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career.''}                                                                                                                                                                                                                       \\*\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}I also helped Hovan Lee (PhD student from King's College London) with his DMFT calculations on transferrin. A paper resulted from this work, for which I am the last author.}                                                                                                                                        \\*\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}During the course of my PhD I provided support to two students. I spent a significant amount of time with M.\,A.\,Al-Badri (Masters, and then PhD student from King's College London), teaching him about DMFT and working with him on DMFT calculations on hemocyanin. I have hosted him in Cambridge twice, and visited him at KCL periodically. A paper resulted from this work. I was also the local port-of-call for S. Mansur (PhD student, Cambridge) for support running ONETEP calculations. This work has resulted in two publications.}                                                                                                                                                            \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   \textbf{\textit{Outreach}}    &                                                                                                                                                                        &                                                                                                                                                                \\
+   \rowcolor{seaborn_bg_grey}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I assisted in Information Days at EPFL, introducing high school students to computational materials science research} \\
+
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I gave talks on computational physics to high school groups in the outreach event \emph{Physics at Work 2017} at the Cavendish Laboratory.}
+\end{tabularx}
+
+\newpage
 \begin{tabularx}{\textwidth}{
       m{\dimexpr0.775\textwidth-2\tabcolsep}%
       m{\dimexpr0.225\textwidth-2\tabcolsep}}
@@ -259,94 +342,36 @@
       m{\dimexpr0.15\textwidth-2\tabcolsep}%
       m{\dimexpr0.175\textwidth-2\tabcolsep}}
    \rowcolor{seaborn_blue}
-   \multicolumn{4}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Conferences, Seminars, Schools, and Workshops}}}      \\
-   \textbf{Year} & \textbf{Event}                                              & \textbf{Location} & \textbf{Contribution} \\
-   {2022}        & 9\textsuperscript{th} Time-Dependent Density-Functional Theory Workshop: Prospects and Applications & Benasque & Invited talk \\
-                 & DFT2022                                                     & Brussels          & Contributed talk      \\
-                 & Psi-K conference                                            & Lausanne          & Poster                \\
+   \multicolumn{4}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Conferences, Seminars, Schools, and Workshops}}}                                              \\
+   \textbf{Year} & \textbf{Event}                                                                                      & \textbf{Location} & \textbf{Contribution} \\
+   {2022}        & 9\textsuperscript{th} Time-Dependent Density-Functional Theory Workshop: Prospects and Applications & Benasque          & Invited talk          \\
+                 & DFT2022                                                                                             & Brussels          & Contributed talk      \\
+                 & Psi-K conference                                                                                    & Lausanne          & Poster                \\
    {2021}
-                 & Quantum Theory of Materials Seminar                         & Dublin            & Invited talk          \\
-                 & APS March Meeting                                           & Virtual           & Contributed talk      \\
-                 & Virtual Winter School on Computational Chemistry            & Virtual           & Tutor                 \\
+                 & Quantum Theory of Materials Seminar                                                                 & Dublin            & Invited talk          \\
+                 & APS March Meeting                                                                                   & Virtual           & Contributed talk      \\
+                 & Virtual Winter School on Computational Chemistry                                                    & Virtual           & Tutor                 \\
    {2020}
-                 & Quantum Fluids in Isolation Seminar Series                  & Boston            & Invited talk          \\
+                 & Quantum Fluids in Isolation Seminar Series                                                          & Boston            & Invited talk          \\
    {2018}
-                 & Autumn School on Correlated Electrons                       & J\"ulich          & Poster                \\
-                 & CCP9 Young Researchers' Event                               & York              & Poster                \\
-                 & DPG March Meeting                                           & Berlin            &                       \\
-                 & CDT student-run seminar series                              & Cambridge         & Invited talk          \\
+                 & Autumn School on Correlated Electrons                                                               & J\"ulich          & Poster                \\
+                 & CCP9 Young Researchers' Event                                                                       & York              & Poster                \\
+                 & DPG March Meeting                                                                                   & Berlin            &                       \\
+                 & CDT student-run seminar series                                                                      & Cambridge         & Invited talk          \\
    {2017}
-                 & Autumn School on Correlated Electrons                       & J\"ulich          & Poster                \\
-                 & CCP-BioSim Conference: Frontiers of Biomolecular Simulation & Southampton       & Poster                \\
-                 & New Generation in Strongly Correlated Electron Systems      & Barcelona         & Contributed talk      \\
-                 & ONETEP Masterclass                                          & Warwick           & Tutor                 \\
-                 & Workshop on Localisation in Quantised Systems               & London            &                       \\
-                 & CCP9 Young Researchers' Event                               & Cambridge         &                       \\
-   {2016}        & Physics by the Lake                                         & Windsor           & Poster                \\
-                 & CCP9 Young Researchers' Event                               & York              & Poster                \\
-                 & ``Programming: Modern Fortran" UCS workshop                 & Cambridge         &                       \\
-   {2015}        & Psi-K conference                                            & San Sebastian     & Poster                \\
-                 & ONETEP Masterclass                                          & Cambridge         &
+                 & Autumn School on Correlated Electrons                                                               & J\"ulich          & Poster                \\
+                 & CCP-BioSim Conference: Frontiers of Biomolecular Simulation                                         & Southampton       & Poster                \\
+                 & New Generation in Strongly Correlated Electron Systems                                              & Barcelona         & Contributed talk      \\
+                 & ONETEP Masterclass                                                                                  & Warwick           & Tutor                 \\
+                 & Workshop on Localisation in Quantised Systems                                                       & London            &                       \\
+                 & CCP9 Young Researchers' Event                                                                       & Cambridge         &                       \\
+   {2016}        & Physics by the Lake                                                                                 & Windsor           & Poster                \\
+                 & CCP9 Young Researchers' Event                                                                       & York              & Poster                \\
+                 & ``Programming: Modern Fortran" UCS workshop                                                         & Cambridge         &                       \\
+   {2015}        & Psi-K conference                                                                                    & San Sebastian     & Poster                \\
+                 & ONETEP Masterclass                                                                                  & Cambridge         &
 \end{tabularx}
 %
-\newpage
-\begin{tabularx}{\textwidth}{l l l}
-   \rowcolor{seaborn_blue}
-   \multicolumn{3}{l}{\textcolor{seaborn_bg_grey_half}{\textbf{Skills}}}                                                                                                                                                                                                                                                                                                   \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   \textbf{\textit{Programming}} &                                                                                                                                                                        &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   Used daily                    & Fortran, Python, Bash                                                                                                                                                  &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   Used monthly                  & MPI, OpenMP                                                                                                                                                            &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   Some experience               & C++, MATLAB, CUDA                                                                                                                                                      &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I developed \href{https://koopmans-functionals.org}{koopmans}, an open-source package for performing Koopmans functional calculations. I am a contributor to \href{https://www.onetep.org}{ONETEP}, a commercially available scientific DFT code, and I am a developer of TOSCAM, a publically available DMFT code}       \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}In 2017 I audited \href{https://www.cl.cam.ac.uk/teaching/1718/L42/}{\emph{Machine Learning and Algorithims for Data Mining}}, a master's course on machine learning run by the Department of Computer Science and Technology at the University of Cambridge.}                                                            \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I participated in \href{https://hashcode.withgoogle.com/}{Google Hash Code 2018}. I sporadically compete on \href{https://projecteuler.net/}{Project Euler} and \href{https://www.codingame.com/home}{CodinGame}}                                                                                                         \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}\textbf{\textit{Packages and Software}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   Used daily                    & Quantum ESPRESSO, ASE, vim, \LaTeX, SLURM, git                                                                                                                         &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   Used monthly                  & PyMol, VMD, ONETEP, TOSCAM, VESTA, spglib                                                                                                                              &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   Some experience               & CASTEP, Siesta, Maestro                                                                                                                                                &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   \textbf{\textit{Teaching}}    &                                                                                                                                                                        &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   2021-22
-                                 & \multicolumn{1}{m{0.5\textwidth}}{Lab demonstrator for master's course in atomistic and quantum simulation of materials}
-                                 & EPFL                                                                                                                                                                                                                                                                                                                                    \\
-   \noalign{\vskip-0.1pt} \rowcolor{seaborn_bg_grey}
-   2017
-                                 & \multicolumn{1}{m{0.5\textwidth}}{Supervised ten third-year students for thermal and statistical physics}
-                                 & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   2016
-                                 & \multicolumn{1}{m{0.5\textwidth}}{Supervised nine second-year students for experimental methods, oscillations, waves, optics, quantum mechanics, and condensed matter}
-                                 & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   2015
-                                 & \multicolumn{1}{m{0.5\textwidth}}{Supervised nine first-year students for physics}
-                                 & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   2013
-                                 & \multicolumn{1}{m{0.5\textwidth}}{Lab demonstrator, university tutor, and private tutor for first-year biological physics}
-                                 & University of Otago                                                                                                                                                                                                                                                                                                                     \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   \textbf{\textit{Mentoring}}   &                                                                                                                                                                        &                                                                                                                                                                \\*\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}During my postdoc I have supervised the Masters project and dissertation of Yannick Schubert.}                                                                                                                                                                                                                       \\*\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}I also helped Hovan Lee (PhD student from King's College London) with his DMFT calculations on transferrin. A paper resulted from this work, for which I am the last author.}                                                                                                                                        \\*\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}During the course of my PhD I provided support to two students.}                                                                                                                                                                                                                                                     \\*\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}I spent a significant amount of time with M.\,A.\,Al-Badri (Masters, and then PhD student from King's College London), teaching him about DMFT and working with him on DMFT calculations on hemocyanin. I have hosted him in Cambridge twice, and visited him at KCL periodically. A paper resulted from this work.} \\*\noalign{\vskip-0.1pt}
-
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}I was the local port-of-call for S. Mansur (PhD student, Cambridge) for support running ONETEP calculations. This work has resulted in two publications.}                                                                                                                                                            \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
-   \textbf{\textit{Outreach}}    &                                                                                                                                                                        &                                                                                                                                                                \\
-   \rowcolor{seaborn_bg_grey}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I gave talks on computational physics to high school groups in the outreach event \emph{Physics at Work 2017} at the Cavendish Laboratory.}
-\end{tabularx}
-
 % \begin{tabularx}{\textwidth}{X}
 %    \rowcolor{seaborn_blue}
 %    \multicolumn{1}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Interests}}} \\
