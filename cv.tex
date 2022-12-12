@@ -84,36 +84,55 @@
 \setlength{\fboxsep}{5pt}%
 \setlength{\fboxrule}{0pt}%
 
-\begin{tabularx}{\textwidth}{X}
+\begin{tabularx}{\textwidth}{
+   m{\dimexpr\textwidth-2\tabcolsep}}
    \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Research and Education}} \\
-   \rowcolor{seaborn_bg_grey_half}%
+   \rowcolor{seaborn_bg_grey_half}
    \hbox{%
-      \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.7cm]{logos/epfl_trimmed.png}}}
-      \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-            École polytechnique fédérale de Lausanne \\ Switzerland
-         \end{minipage}}
-   }
-   \\
-   \rowcolor{seaborn_bg_grey_half}%
-   \textbf{Postdoctoral researcher (1 Nov 2019 -- present)}                                        \\
+   \raisebox{-0.5\height}{
+   \begin{minipage}[b]{0.825\linewidth}
+   {\large \textbf{École polytechnique fédérale de Lausanne, Switzerland}} \\ \textbf{Postdoctoral researcher (1 Nov 2019 -- present)}
+   \end{minipage}
+      }
+   \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.7cm]{logos/epfl_trimmed.png}}}
+   } \\
+   % \rowcolor{seaborn_bg_grey_half}%
+   % \hbox{%
+   %    \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.7cm]{logos/epfl_trimmed.png}}}
+   %    \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
+   %          École polytechnique fédérale de Lausanne \\ Switzerland
+   %       \end{minipage}}
+   % }
+   % \\
+   % \rowcolor{seaborn_bg_grey_half}%
+   % \textbf{}                                        \\
    \rowcolor{seaborn_bg_grey_half}%
    \textit{Supervisor:} Prof. Nicola Marzari
    \\
    \rowcolor{seaborn_bg_grey_half}%
-   The goal of my current postdoc is to drive the ongoing development of Koopmans functionals. To this end, I have been one of the main developers of the \href{https://koopmans-functionals.org/}{koopmans} code, a package that (a) implements Koopmans functionals in \texttt{Quantum ESPRESSO} and (b) automates the various workflows that these functionals require. I also was involved in the development of the BLOR functional, a DFT+\emph{U}-type corrective functional that enforeces the flat plane condition on localized subspaces, dispensing with the need for an ad hoc derivation from the Hubbard model.
+   The goal of my current postdoc is to drive the ongoing development of Koopmans functionals. To this end, I have been one of the main developers of the \href{https://koopmans-functionals.org/}{koopmans} code, a package that (a) implements Koopmans functionals in \texttt{Quantum ESPRESSO} and (b) automates the various workflows that these functionals require. I also was involved in the development of the BLOR functional, a DFT+\emph{U}-type corrective functional that enforces the flat plane condition on localized subspaces, dispensing with the need for an ad hoc derivation from the Hubbard model.
    \\
    %
    % PhD
    %
+   % \rowcolor{seaborn_bg_grey}
+   % \hbox{%
+   %    \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/cambridge_trimmed.png}}}
+   %    \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
+   %          University of Cambridge \\ United Kingdom
+   %       \end{minipage}}
+   % }                                                                                               \\
    \rowcolor{seaborn_bg_grey}
    \hbox{%
-      \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/cambridge_trimmed.png}}}
-      \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-            University of Cambridge \\ United Kingdom
-         \end{minipage}}
-   }                                                                                               \\
-   \rowcolor{seaborn_bg_grey}
-   \textbf{PhD in Physics (1 Oct 2015 -- 26 Oct 2019)}                                             \\
+      \raisebox{-0.5\height}{
+   \begin{minipage}[b]{0.92\linewidth}
+   {\large \textbf{University of Cambridge, United Kingdom}} \\ \textbf{PhD in Physics (1 Oct 2015 -- 26 Oct 2019)}
+   \end{minipage}
+      }
+   \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/cambridge_trimmed.png}}}
+   }
+   
+   % \textbf{PhD in Physics (1 Oct 2015 -- 26 Oct 2019)}                                             \\
    \cellcolor{seaborn_bg_grey}%
    \noindent \textit{Title:} ``Describing Correlation Effects in Biological Systems"
    \\
@@ -130,6 +149,10 @@
    %
    % Masters
    %
+\end{tabularx}
+
+\begin{tabularx}{\textwidth}{
+   m{\dimexpr\textwidth-2\tabcolsep}}
    \rowcolor{seaborn_bg_grey}
    \textbf{MPhil in Scientific Computing (1 Oct 2014 -- 30 Sep 2015)}
    \\%
@@ -143,7 +166,7 @@
    \\
    \rowcolor{seaborn_bg_grey}%
 
-   \textit{Funding:} EPSRC (valued at approx.\ \euro{}50,000)
+   \textit{Funding:} EPSRC; LB Wood Scholarship; Douglass D. Crombie Award in Physics
    \\
    \rowcolor{seaborn_bg_grey}
 
@@ -151,13 +174,22 @@
    \\
    \rowcolor{seaborn_bg_grey_half}
    \hbox{%
-      \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/otago_trimmed.png}}}
-      \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-            University of Otago \\ New Zealand
-         \end{minipage}}
-   }                                                                                                                                                                                                                                                                                                                                                            \\
-   \rowcolor{seaborn_bg_grey_half}
-   \textbf{Research Assistant (1 Mar 2014 -- 31 July 2014)}                                                                                                                                                                                                                                                                                                     \\
+      \raisebox{-0.5\height}{
+   \begin{minipage}[b]{0.93\linewidth}
+   {\large \textbf{University of Otago, New Zealand}} \\ \textbf{Research Assistant (1 Mar 2014 -- 31 July 2014)}
+   \end{minipage}
+      }
+   \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/otago_trimmed.png}}}
+   }
+   % \rowcolor{seaborn_bg_grey_half}
+   % \hbox{%
+   %    \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/otago_trimmed.png}}}
+   %    \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
+   %          University of Otago \\ New Zealand
+   %       \end{minipage}}
+   % }                                                                                                                                                                                                                                                                                                                                                            \\
+   % \rowcolor{seaborn_bg_grey_half}
+   % \textbf{Research Assistant (1 Mar 2014 -- 31 July 2014)}                                                                                                                                                                                                                                                                                                     \\
    \cellcolor{seaborn_bg_grey_half}%
    \textit{Supervisor:} Prof. P. Blair Blakie
    \\
@@ -174,6 +206,10 @@
    \textit{Supervisor:} Prof. P. Blair Blakie
    \\
    \cellcolor{seaborn_bg_grey_half}%
+   \textit{Funding:} University of Otago Prestige Scholarship in Science; Beverley Bursary   \\
+   \cellcolor{seaborn_bg_grey_half}%
+   \textit{Awards:} Prince of Wales Prize \\
+   \cellcolor{seaborn_bg_grey_half}%
    This one-year honours programme was comprised of taught courses in physics and mathematics, and a research project exploring the effects of temperature on the stability of dipolar BECs. I graduated with first-class honours.
    \\
    %
@@ -181,27 +217,33 @@
    %
    \rowcolor{seaborn_bg_grey}
    \hbox{%
-      \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/berkeley_trimmed.png}}}
-      \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-            University of California, Berkeley \\ United States of America
-         \end{minipage}}
-   }                                                                                                                                                                                                                                                                                                                                                            \\
-   \rowcolor{seaborn_bg_grey}
-   \textbf{Exchange (16 Aug 2012 -- 14 Dec 2012)}                                                                                                                                                                                                                                                                                                               \\
+      \raisebox{-0.5\height}{
+   \begin{minipage}[b]{0.815\linewidth}
+   {\large \textbf{University of California, Berkeley}} \\ \textbf{Exchange (16 Aug 2012 -- 14 Dec 2012)}
+   \end{minipage}
+      }
+   \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.8cm]{logos/berkeley_trimmed.png}}}
+   }
+   \\
+   \cellcolor{seaborn_bg_grey}%
+   \textit{Funding:} The Alumni of the University of Otago in America Inc. Award \\
    \cellcolor{seaborn_bg_grey}%
    I spent the final semester of my BSc (see below) on exchange at Berkeley.
    \\
    \rowcolor{seaborn_bg_grey_half}
    \hbox{%
-      \raisebox{-0.5\height}{\fbox{\includegraphics[height=1.5cm]{logos/otago_trimmed.png}}}
-      \raisebox{-0.5\height}{\begin{minipage}[b]{0.7\linewidth}
-            University of Otago \\ New Zealand
-         \end{minipage}}
-   }                                                                                                                                                                                                                                                                                                                                                            \\
+      \raisebox{-0.5\height}{
+   \begin{minipage}[b]{0.93\linewidth}
+   {\large \textbf{University of Otago, New Zealand}} \\ \textbf{BSc in Mathematics and Physics (1 Mar 2010 -- 10 Nov 2012)}
+   \end{minipage}
+      }
+   \raisebox{-0.5\height}{\fbox{\includegraphics[height=1cm]{logos/otago_trimmed.png}}}
+   } \\
    \rowcolor{seaborn_bg_grey_half}
-   \rowcolor{seaborn_bg_grey_half}
-   \textbf{BSc in Mathematics and Physics (1 Mar 2010 -- 10 Nov 2012)}                                                                                                                                                                                                                                                                                          \\
+   \textit{Funding:} University of Otago Dux Scholarship; Alumni Annual Appeal Scholarship\\
    \cellcolor{seaborn_bg_grey_half}%
+   \textit{Awards:} Robert Jack / Institute of Physics Prize; Gloria Olive Memorial Prize in Mathematics; R. J. T. Bell Prize; New Zealand Institute of Chemistry Prize \\
+   \rowcolor{seaborn_bg_grey_half}
    A three-year Bachelor's degree with a double-major in mathematics and physics. I obtained straight A\textsuperscript{+} grades throughout.
    \\
    \rowcolor{seaborn_bg_grey_half}
@@ -211,64 +253,146 @@
 \end{tabularx}
 %}
 
-\newpage
 \begin{tabularx}{\textwidth}{l l l}
    \rowcolor{seaborn_blue}
-   \multicolumn{3}{l}{\textcolor{seaborn_bg_grey_half}{\textbf{Skills}}}                                                                                                                                                                                                                                                                                                   \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{l}{\textcolor{seaborn_bg_grey_half}{\large \textbf{Skills}}}                                                                                                                                                                                                                                                                                                   \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey}
    \textbf{\textit{Programming}} &                                                                                                                                                                        &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}%
+   I am a confident programmer, with experience in various languages (mostly Python and Fortran) implementing complex algorithms (mostly in the context of electronic structure calculations). I routinely employ good programming practices such as testing, documentation, and CI/CD.
+   }                                                            \\\noalign{\vskip-0.1pt}
+   
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}%
+   Using these skills, I developed \href{https://koopmans-functionals.org}{koopmans}, an open-source package for performing Koopmans functional calculations. I am a contributor to \href{https://www.onetep.org}{ONETEP}, a commercially available scientific DFT code, and I am a developer of TOSCAM, a publically available DMFT code.}       \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}In addition to my formal training in scientific computing, during my PhD I sat in on \href{https://www.cl.cam.ac.uk/teaching/1718/L42/}{\emph{Machine Learning and Algorithims for Data Mining}}, a master's course on machine learning run by the Department of Computer Science and Technology at the University of Cambridge. I have also participated in coding competitions such as \href{https://hashcode.withgoogle.com/}{Google Hash Code}, \href{https://projecteuler.net/}{Project Euler}, and \href{https://www.codingame.com/home}{CodinGame}.}                                                                                                         \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   \multicolumn{3}{X}{\textit{Languages and interfaces}} \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey}
    Used daily                    & Python, Fortran,  Bash                                                                                                                                                  &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey}
-   Used monthly                  & MPI, OpenMP                                                                                                                                                            &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   Some experience               & C++, MPI, OpenMP, MATLAB, CUDA                                                                                                                                                      &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey}
-   Some experience               & C++, MATLAB, CUDA                                                                                                                                                      &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I developed \href{https://koopmans-functionals.org}{koopmans}, an open-source package for performing Koopmans functional calculations. I am a contributor to \href{https://www.onetep.org}{ONETEP}, a commercially available scientific DFT code, and I am a developer of TOSCAM, a publically available DMFT code.}       \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}In addition to my formal training in scientific computing, during my PhD I sat in on \href{https://www.cl.cam.ac.uk/teaching/1718/L42/}{\emph{Machine Learning and Algorithims for Data Mining}}, a master's course on machine learning run by the Department of Computer Science and Technology at the University of Cambridge.}                                                            \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I have participated in coding competitions such as \href{https://hashcode.withgoogle.com/}{Google Hash Code}, \href{https://projecteuler.net/}{Project Euler}, and \href{https://www.codingame.com/home}{CodinGame}.}                                                                                                         \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}\textbf{\textit{Packages and software}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   Used daily                    & \multicolumn{2}{l}{vscode, Quantum ESPRESSO, ASE, vim, \LaTeX, SLURM, git                                                                                                                         }                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   Used monthly                  & PyMol, VMD, ONETEP, TOSCAM, VESTA, spglib                                                                                                                              &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey_half}
-   Some experience               & CASTEP, Siesta, Maestro                                                                                                                                                &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{{\textit{Packages and software}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey}
+   Used daily                    & \multicolumn{2}{l}{vim, git, vscode, Quantum ESPRESSO, ASE, \LaTeX, SLURM                                                                                                                         }                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   Extensive experience      & ONETEP, TOSCAM, PyMol                                                                                                                     &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   Some experience               & CASTEP, Siesta, Maestro, VMD, spglib, VESTA                                                                                                                                                &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey_half}
    \textbf{\textit{Teaching}}    &                                                                                                                                                                        &                                                                                                                                                                \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
+   \rowcolor{seaborn_bg_grey_half}
    2021-22
                                  & \multicolumn{1}{m{0.5\textwidth}}{Lab demonstrator for master's course in atomistic and quantum simulation of materials}
                                  & EPFL                                                                                                                                                                                                                                                                                                                                    \\\noalign{\vskip-0.1pt}
-   \noalign{\vskip-0.1pt} \rowcolor{seaborn_bg_grey}
+   \noalign{\vskip-0.1pt} \rowcolor{seaborn_bg_grey_half}
    2017
                                  & \multicolumn{1}{m{0.5\textwidth}}{Supervised ten third-year students for thermal and statistical physics}
                                  & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
+   \rowcolor{seaborn_bg_grey_half}
    2016
                                  & \multicolumn{1}{m{0.5\textwidth}}{Supervised nine second-year students for experimental methods, oscillations, waves, optics, quantum mechanics, and condensed matter}
                                  & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
+   \rowcolor{seaborn_bg_grey_half}
    2015
                                  & \multicolumn{1}{m{0.5\textwidth}}{Supervised nine first-year students for physics}
                                  & University of Cambridge                                                                                                                                                                                                                                                                                                                 \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
+   \rowcolor{seaborn_bg_grey_half}
    2013
                                  & \multicolumn{1}{m{0.5\textwidth}}{Lab demonstrator, university tutor, and private tutor for first-year biological physics}
                                  & University of Otago                                                                                                                                                                                                                                                                                                                     \\\noalign{\vskip-0.1pt}
+   \rowcolor{seaborn_bg_grey}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}\textbf{\textit{Supervision and mentoring}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}During my postdoc I have supervised the Masters project and dissertation of Yannick Schubert. He said that ``thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career.'' One preprint has resulted from this work (with another in preparation).}                                                                                                                                                                                                                       \\*\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I also helped Hovan Lee (PhD student from King's College London) with his DMFT calculations on transferrin. A paper resulted from this work, of which I am the last author.}                                                                                                                                        \\*\noalign{\vskip-0.1pt}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}During the course of my PhD I provided support to two students. I spent a significant amount of time with M.\,A.\,Al-Badri (Masters, and then PhD student from King's College London), teaching him about DMFT and working with him on DMFT calculations on hemocyanin. I have hosted him in Cambridge twice, and visited him at KCL periodically. A paper resulted from this work. I was also the local port-of-call for S. Mansur (PhD student, Cambridge) for support running ONETEP calculations. This work resulted in two publications.}                                                                                                                                                            \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey_half}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}\textbf{\textit{Supervision and mentoring}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}During my postdoc I have supervised the Masters project and dissertation of Yannick Schubert. He said that ``thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career.''}                                                                                                                                                                                                                       \\*\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}I also helped Hovan Lee (PhD student from King's College London) with his DMFT calculations on transferrin. A paper resulted from this work, of which I am the last author.}                                                                                                                                        \\*\noalign{\vskip-0.1pt}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}During the course of my PhD I provided support to two students. I spent a significant amount of time with M.\,A.\,Al-Badri (Masters, and then PhD student from King's College London), teaching him about DMFT and working with him on DMFT calculations on hemocyanin. I have hosted him in Cambridge twice, and visited him at KCL periodically. A paper resulted from this work. I was also the local port-of-call for S. Mansur (PhD student, Cambridge) for support running ONETEP calculations. This work has resulted in two publications.}                                                                                                                                                            \\\noalign{\vskip-0.1pt}
-   \rowcolor{seaborn_bg_grey}
    \textbf{\textit{Outreach}}    &                                                                                                                                                                        &                                                                                                                                                                \\
-   \rowcolor{seaborn_bg_grey}
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I assisted in Information Days at EPFL, introducing high school students to computational materials science research} \\
-
-   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey}I gave talks on computational physics to high school groups in the outreach event \emph{Physics at Work 2017} at the Cavendish Laboratory.}
+   \rowcolor{seaborn_bg_grey_half}
+   \multicolumn{3}{X}{\cellcolor{seaborn_bg_grey_half}I have assisted at several information days at EPFL and at Cambridge, introducing high school students to computational materials science research.}
 \end{tabularx}
 
+% \begin{tabularx}{\textwidth}{
+%    m{\dimexpr0.10\textwidth-2\tabcolsep}%
+%    m{\dimexpr0.70\textwidth-2\tabcolsep}%
+%    >{\raggedleft\arraybackslash}m{\dimexpr0.20\textwidth-2\tabcolsep}}
+%    \rowcolor{seaborn_blue}
+%    \multicolumn{3}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Selected Grants and Scholarships}}}                                                                           \\
+%    \textbf{Year} & \textbf{Description}                                                                                                      & \textbf{Approximate value} \\
+%    2018          & EPSRC capital grant for computing hours on CSD3, a Tier-2 HPC centre                                                      & \euro30,000                \\
+%    {2014}        & \textit{LB Wood Scholarship} to supplement an existing scholarship for postgraduate study in Britain                      & \euro5,500                 \\
+%    {2013}        & \textit{Cambridge--Rutherford Memorial Scholarship} for doctorate studies at the University of Cambridge                  & \euro150,000               \\
+%                  & \textit{Douglass D. Crombie Award in Physics} for an Otago graduate embarking on doctoral studies overseas                & \euro 4,000                \\
+%    {2012}        & \textit{University of Otago Prestige Scholarship in Science} to support honours study                                     & \euro1,000                 \\
+%                  & \textit{Beverley Bursary} for study towards physics honours (2011-2013)                                                   & \euro2,000                 \\
+%                  % & \textit{The Alumni of the University of Otago in America Inc. Award} to support an academic exchange to the United States & \euro600                   \\
+%    {2010}        & \textit{Alumni Annual Appeal Scholarship} for study at the University of Otago                                            & \euro4,000                 \\
+%                  & \textit{University of Otago Dux Scholarship} for study at the University of Otago                                         & \euro4,000                 \\
+%                  & \textit{University of Canterbury Dux Scholarship} for study at the University of Canterbury (not taken up)                & \euro4,000                 \\
+%                  & \textit{University of Canterbury Mathematics Scholarship} for study at the University of Canterbury (not taken up)        & \euro2,500                 \\
+%                  % & \textit{University of Canterbury Science Scholarship} for study at the University of Canterbury (not taken up)            & \euro600                   \\
+% \end{tabularx}
+% 
+% \begin{tabularx}{\textwidth}{m{0.1\textwidth-2\tabcolsep} m{0.9\textwidth-2\tabcolsep}}
+%    \rowcolor{seaborn_blue}
+%    \multicolumn{2}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Awards and Prizes}}}                                                         \\
+%    {2016} & \textit{Poster prize} at CCP9 Young Researchers' Event                                                                                \\
+%    {2013} & \textit{Prince of Wales Award} for the most outstanding student completing an undergraduate degree at the University of Otago in 2013 \\
+%    {2011} & \textit{Robert Jack / Institute of Physics Prize} for the top student in 200-level physics                                            \\
+%           & \textit{Gloria Olive Memorial Prize in Mathematics} for the top student in 300-level mathematics                                      \\
+%    {2010} & \textit{Department of Mathematics and Statistics Scholarship} for study at the University of Canterbury                               \\
+%           & \textit{Robert Jack / Institute of Physics Prize} for the top student in 100-level physics                                            \\
+%           & \textit{R. J. T. Bell Prize} for the top student in 200-level mathematics                                                             \\
+%           & \textit{New Zealand Institute of Chemistry Prize} for the top student in CHEM111: Molecular Architecture                              \\
+%    % \multicolumn{2}{l}{\textbf{\textit{High School}}} \\
+%    % {2009} & \textit{Dux} of Cashmere High School\\
+%    % & \textit{NCEA Scholarships} in Calculus, Physics, and Chemistry\\
+%    % & Top Year 13 student in English, Physics, and Chemistry\\
+%    % {2008} & \textit{McCombs Scholarship} for all round excellence and contributions to Cashmere High\\
+%    % & Top Year 12 student in English, Art, Physics, Chemistry, and Year 13 Calculus\\
+%    % & \textit{NCEA Scholarship} in Calculus
+% \end{tabularx}
+
+\begin{tabularx}{\textwidth}{
+      m{\dimexpr0.075\textwidth-2\tabcolsep}%
+      m{\dimexpr0.57\textwidth-2\tabcolsep}%
+      m{\dimexpr0.15\textwidth-2\tabcolsep}%
+      m{\dimexpr0.205\textwidth-2\tabcolsep}}
+   \rowcolor{seaborn_blue}
+   \multicolumn{4}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Selected talks}}}                                              \\
+   \textbf{Year} & \textbf{Event}                                                                                      & \textbf{Location} & \textbf{Contribution} \\
+   {2022}        & Advanced Quantum ESPRESSO tutorial: Hubbard and Koopmans functionals from linear response & Virtual & Invited talk (\href{https://youtu.be/tgzgs1bp14w}{video}); Tutorial (\href{https://youtu.be/uaHWhCZoDAk}{video}) \\
+                 & 9\textsuperscript{th} Time-Dependent Density-Functional Theory Workshop: Prospects and Applications & Benasque          & Invited talk          \\
+   {2021}        & Quantum Theory of Materials Seminar                                                                 & Dublin            & Invited talk (\href{https://youtu.be/E_Uu_ujmWS0}{video})         \\
+   {2020}
+                 & Quantum Fluids in Isolation Seminar Series                                                          & Boston            & Invited talk (\href{https://youtu.be/AI6qFGf1Zcw}{video})         \\
+\end{tabularx}
+%
+% \begin{tabularx}{\textwidth}{X}
+%    \rowcolor{seaborn_blue}
+%    \multicolumn{1}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Interests}}} \\
+%    I am a violinist, and have been a member (and concertmaster) of many orchestras including the New Zealand Symphony Secondary Schools Orchestra, the Christchurch Youth Orchestra, and the Cambridge Musical Society Symphony Orchestra. I love the outdoors and am an avid runner, cyclist, camper, and hiker.%  I enjoy pub quizzes (having run several for my college's postgraduate community)
+% \end{tabularx}
+
 \newpage
+
+\begin{tabularx}{\textwidth}{
+      m{\dimexpr0.1\textwidth-2\tabcolsep}
+      m{\dimexpr0.45\textwidth-2\tabcolsep}
+      m{\dimexpr0.45\textwidth-2\tabcolsep}}
+   \rowcolor{seaborn_blue}
+   \multicolumn{3}{l}{\textcolor{white}{\large \textbf{Referees}}}                                         \\\noalign{\vskip-0.1pt}
+                    & \textbf{\textit{Prof. Mike Payne}} & \textbf{\textit{Prof. Nicola Marzari}}   \\\noalign{\vskip-0.1pt}
+   \textit{Address} & Room 528, Mott Building            & MED 2 1126                               \\\noalign{\vskip-0.1pt}
+                    & Cavendish Laboratory               & STI IMX THEOS                            \\\noalign{\vskip-0.1pt}
+                    & University of Cambridge            & École polytechnique fédérale de Lausanne \\\noalign{\vskip-0.1pt}
+                    & 19 J J Thomson Avenue              & Route Cantonale                          \\\noalign{\vskip-0.1pt}
+                    & Cambridge CB3 0HE                  & 1015 Lausanne                            \\\noalign{\vskip-0.1pt}
+                    & United Kingdom                     & Switzerland                              \\\noalign{\vskip-0.1pt}
+   \textit{Email}   & mcp1@cam.ac.uk                     & nicola.marzari@epfl.ch                   \\\noalign{\vskip-0.1pt}
+   \textit{Phone}   & +44 (0)1223 337254                 & +41 (0)21 693 1129
+\end{tabularx}
+
 \begin{tabularx}{\textwidth}{
    X}
    %   m{\dimexpr0.775\textwidth-2\tabcolsep}%
@@ -277,6 +401,8 @@
    %\multicolumn{2}{l}{
       \large\textcolor{seaborn_bg_grey_half}{\textbf{Publications}} 
    %}
+   \\
+   Y.\,Schubert, N.\,Marzari, \textbf{EBL}, \href{https://arxiv.org/abs/?????}{\textit{Testing Koopmans spectral functionals on the analytically-solvable Hooke's atom}}. arXiv:????.????? (2022)
    \\
    A.\,Burgess, \textbf{EBL}, D.\,D.\,O'Regan, \href{https://arxiv.org/abs/2210.17404}{\textit{A DFT+U type functional derived to explicitly address the flat plane condition}}. arXiv:2210.17404 (2022)
    \\
@@ -296,107 +422,6 @@
    C.\,J.\,Edgcombe, S.\,M.\,Masur, \textbf{EBL}, J.\,Whaley-Baldwin, and C.\,H.\,W.\,Barnes, \href{https://www.sciencedirect.com/science/article/pii/S0304399118302833}{\textit{Analysis of a capped carbon nanotube by linear-scaling density-functional theory}}. Ultramicroscopy 198 (2019) 26                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ %& 14 citations                                    \\
    \textbf{EBL}, D.\,J.\,Cole, M.\,C.\,Payne, and D.\,D.\,O'Regan, \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.98.235157}{\textit{Role of spin in the calculation of Hubbard U and Hund’s J parameters from first principles}}. Phys. Rev. B 98 (2018) 235157                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ %& 33 citations                                    \\
    \textbf{EBL} and P.\,B.\,Blakie, \href{https://journals.aps.org/pra/pdf/10.1103/PhysRevA.90.053605}{\textit{Thermally activated local collapse of a flattened dipolar condensate}}. Phys. Rev.~A 90 (2014) 053605                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ % & 9 citations; selected as an Editors' Suggestion
-\end{tabularx}
-
-\begin{tabularx}{\textwidth}{
-   m{\dimexpr0.10\textwidth-2\tabcolsep}%
-   m{\dimexpr0.70\textwidth-2\tabcolsep}%
-   >{\raggedleft\arraybackslash}m{\dimexpr0.20\textwidth-2\tabcolsep}}
-   \rowcolor{seaborn_blue}
-   \multicolumn{3}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Grants and Scholarships}}}                                                                           \\
-   \textbf{Year} & \textbf{Description}                                                                                                      & \textbf{Approximate value} \\
-   2018          & EPSRC capital grant for computing hours on CSD3, a Tier-2 HPC centre                                                      & \euro30,000                \\
-   {2014}        & \textit{LB Wood Scholarship} to supplement an existing scholarship for postgraduate study in Britain                      & \euro5,500                 \\
-   {2013}        & \textit{Cambridge--Rutherford Memorial Scholarship} for doctorate studies at the University of Cambridge                  & \euro150,000               \\
-                 & \textit{Douglass D. Crombie Award in Physics} for an Otago graduate embarking on doctoral studies overseas                & \euro 4,000                \\
-   {2012}        & \textit{University of Otago Prestige Scholarship in Science} to support honours study                                     & \euro1,000                 \\
-                 & \textit{Beverley Bursary} for study towards physics honours (2011-2013)                                                   & \euro2,000                 \\
-                 & \textit{The Alumni of the University of Otago in America Inc. Award} to support an academic exchange to the United States & \euro600                   \\
-   {2010}        & \textit{Alumni Annual Appeal Scholarship} for study at the University of Otago                                            & \euro4,000                 \\
-                 & \textit{University of Otago Dux Scholarship} for study at the University of Otago                                         & \euro4,000                 \\
-                 & \textit{University of Canterbury Dux Scholarship} for study at the University of Canterbury (not taken up)                & \euro4,000                 \\
-                 & \textit{University of Canterbury Mathematics Scholarship} for study at the University of Canterbury (not taken up)        & \euro2,500                 \\
-                 & \textit{University of Canterbury Science Scholarship} for study at the University of Canterbury (not taken up)            & \euro600                   \\
-\end{tabularx}
-
-\begin{tabularx}{\textwidth}{l m{0.9\textwidth}}
-   \rowcolor{seaborn_blue}
-   \multicolumn{2}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Awards and Prizes}}}                                                         \\
-   {2016} & \textit{Poster prize} at CCP9 Young Researchers' Event                                                                                \\
-   {2013} & \textit{Prince of Wales Award} for the most outstanding student completing an undergraduate degree at the University of Otago in 2013 \\
-   {2011} & \textit{Robert Jack / Institute of Physics Prize} for the top student in 200-level physics                                            \\
-          & \textit{Gloria Olive Memorial Prize in Mathematics} for the top student in 300-level mathematics                                      \\
-   {2010} & \textit{Department of Mathematics and Statistics Scholarship} for study at the University of Canterbury                               \\
-          & \textit{Robert Jack / Institute of Physics Prize} for the top student in 100-level physics                                            \\
-          & \textit{R. J. T. Bell Prize} for the top student in 200-level mathematics                                                             \\
-          & \textit{New Zealand Institute of Chemistry Prize} for the top student in CHEM111: Molecular Architecture                              \\
-   % \multicolumn{2}{l}{\textbf{\textit{High School}}} \\
-   % {2009} & \textit{Dux} of Cashmere High School\\
-   % & \textit{NCEA Scholarships} in Calculus, Physics, and Chemistry\\
-   % & Top Year 13 student in English, Physics, and Chemistry\\
-   % {2008} & \textit{McCombs Scholarship} for all round excellence and contributions to Cashmere High\\
-   % & Top Year 12 student in English, Art, Physics, Chemistry, and Year 13 Calculus\\
-   % & \textit{NCEA Scholarship} in Calculus
-\end{tabularx}
-
-\begin{tabularx}{\textwidth}{
-      m{\dimexpr0.075\textwidth-2\tabcolsep}%
-      m{\dimexpr0.6\textwidth-2\tabcolsep}%
-      m{\dimexpr0.15\textwidth-2\tabcolsep}%
-      m{\dimexpr0.175\textwidth-2\tabcolsep}}
-   \rowcolor{seaborn_blue}
-   \multicolumn{4}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Conferences, Seminars, Schools, and Workshops}}}                                              \\
-   \textbf{Year} & \textbf{Event}                                                                                      & \textbf{Location} & \textbf{Contribution} \\
-   {2022}        & Advanced Quantum ESPRESSO tutorial: Hubbard and Koopmans functionals from linear response & Virtual & Invited talk; tutor \\
-                 & 9\textsuperscript{th} Time-Dependent Density-Functional Theory Workshop: Prospects and Applications & Benasque          & Invited talk          \\
-                 & DFT2022                                                                                             & Brussels          & Contributed talk      \\
-                 & Psi-K conference                                                                                    & Lausanne          & Poster                \\
-   {2021} & ASE/Fireworks workshop on high-throughput workflows & Copenhagen & Poster \\
-                 & Quantum Theory of Materials Seminar                                                                 & Dublin            & Invited talk          \\
-                 & APS March Meeting                                                                                   & Virtual           & Contributed talk      \\
-                 & Virtual Winter School on Computational Chemistry                                                    & Virtual           & Tutor                 \\
-   {2020}
-                 & Quantum Fluids in Isolation Seminar Series                                                          & Boston            & Invited talk          \\
-   {2018}
-                 & Autumn School on Correlated Electrons                                                               & J\"ulich          & Poster                \\
-                 & CCP9 Young Researchers' Event                                                                       & York              & Poster                \\
-                 & DPG March Meeting                                                                                   & Berlin            &                       \\
-                 & CDT student-run seminar series                                                                      & Cambridge         & Invited talk          \\
-   {2017}
-                 & Autumn School on Correlated Electrons                                                               & J\"ulich          & Poster                \\
-                 & CCP-BioSim Conference: Frontiers of Biomolecular Simulation                                         & Southampton       & Poster                \\
-                 & New Generation in Strongly Correlated Electron Systems                                              & Barcelona         & Contributed talk      \\
-                 & ONETEP Masterclass                                                                                  & Warwick           & Tutor                 \\
-                 & Workshop on Localisation in Quantised Systems                                                       & London            &                       \\
-                 & CCP9 Young Researchers' Event                                                                       & Cambridge         &                       \\
-   {2016}        & Physics by the Lake                                                                                 & Windsor           & Poster                \\
-                 & CCP9 Young Researchers' Event                                                                       & York              & Poster                \\
-                 & ``Programming: Modern Fortran" UCS workshop                                                         & Cambridge         &                       \\
-   {2015}        & Psi-K conference                                                                                    & San Sebastian     & Poster                \\
-                 & ONETEP Masterclass                                                                                  & Cambridge         &
-\end{tabularx}
-%
-% \begin{tabularx}{\textwidth}{X}
-%    \rowcolor{seaborn_blue}
-%    \multicolumn{1}{l}{\large\textcolor{seaborn_bg_grey_half}{\textbf{Interests}}} \\
-%    I am a violinist, and have been a member (and concertmaster) of many orchestras including the New Zealand Symphony Secondary Schools Orchestra, the Christchurch Youth Orchestra, and the Cambridge Musical Society Symphony Orchestra. I love the outdoors and am an avid runner, cyclist, camper, and hiker.%  I enjoy pub quizzes (having run several for my college's postgraduate community)
-% \end{tabularx}
-
-\begin{tabularx}{\textwidth}{
-      m{\dimexpr0.1\textwidth-2\tabcolsep}
-      m{\dimexpr0.45\textwidth-2\tabcolsep}
-      m{\dimexpr0.45\textwidth-2\tabcolsep}}
-   \rowcolor{seaborn_blue}
-   \multicolumn{3}{l}{\textcolor{white}{\textbf{Referees}}}                                         \\\noalign{\vskip-0.1pt}
-                    & \textbf{\textit{Prof. Mike Payne}} & \textbf{\textit{Prof. Nicola Marzari}}   \\\noalign{\vskip-0.1pt}
-   \textit{Address} & Room 528, Mott Building            & MED 2 1126                               \\\noalign{\vskip-0.1pt}
-                    & Cavendish Laboratory               & STI IMX THEOS                            \\\noalign{\vskip-0.1pt}
-                    & University of Cambridge            & École polytechnique fédérale de Lausanne \\\noalign{\vskip-0.1pt}
-                    & 19 J J Thomson Avenue              & Route Cantonale                          \\\noalign{\vskip-0.1pt}
-                    & Cambridge CB3 0HE                  & 1015 Lausanne                            \\\noalign{\vskip-0.1pt}
-                    & United Kingdom                     & Switzerland                              \\\noalign{\vskip-0.1pt}
-   \textit{Email}   & mcp1@cam.ac.uk                     & nicola.marzari@epfl.ch                   \\\noalign{\vskip-0.1pt}
-   \textit{Phone}   & +44 (0)1223 337254                 & +41 (0)21 693 1129
 \end{tabularx}
 
 \end{document}
