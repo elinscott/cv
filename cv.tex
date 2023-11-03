@@ -34,7 +34,7 @@
 
 \begin{document}
    \hbox{%
-   \raisebox{-0.535\height}{\includegraphics[width=0.12\textwidth]{mugshot.jpg}}%
+   \raisebox{-0.545\height}{\includegraphics[width=0.124\textwidth]{mugshot.jpg}}%
    \hspace{0.017\textwidth}
    \begin{minipage}{0.856\textwidth}
    \begin{tabularx}{\textwidth}{
@@ -46,7 +46,7 @@
       \multicolumn{4}{l}{\cellcolor{seaborn_red}%
          \Huge\textbf{\textcolor{seaborn_bg_grey_half}{Edward Linscott}%
          }}                                                                                                                         \\
-      \textit{Nationality  } & New Zealander          & \textit{Email  } & edward.linscott@epfl.ch                                  \\
+      \textit{Nationality  } & New Zealander          & \textit{Email  } & edward.linscott@psi.ch                                  \\
       \textit{Date of birth} & 26/11/1991             & \textit{Phone} & +41 79 678 9641 \\
       \multicolumn{4}{X}{
          \includegraphics[height=0.7em]{favicons/icons8-google-scholar-192-trimmed.png} \href{https://scholar.google.co.uk/citations?user=4_ejng0AAAAJ}{Google Scholar}
@@ -59,10 +59,10 @@
 
 \begin{tabularx}{\textwidth}{X}
    \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Summary}} \\
-   I am currently a postdoctoral researcher at EPFL in the group of Prof.\ Nicola Marzari. I am researching methods for improving the performance of density functional theory (DFT). Taking inspiration from known properties of the exact functional and our knowledge of the systemic errors of DFT, I (and others) have shown how to construct inexpensive corrections to DFT that drastically improve its performance.
+   I am currently a postdoctoral researcher at the Paul Scherrer Institute (Switzerland) in the group of Prof.\ Nicola Marzari. I am researching methods for improving the performance of density functional theory (DFT). Taking inspiration from known properties of the exact functional and our knowledge of the systemic errors of DFT, I (and others) have shown how to construct inexpensive corrections to DFT that drastically improve its performance.
 
    \vspace{6pt}
-   I am now looking for further opportunities where I can apply my expertise in developing density functional approximations and my coding skills to create the next generation of state-of-the-art computational methods for materials science and quantum chemistry.
+   I am always looking for new opportunities where I can apply my expertise in developing density functional approximations and my coding skills to create the next generation of state-of-the-art computational methods for materials science and quantum chemistry.
    
    \vspace{6pt}
    Career highlights thus far include...
@@ -72,10 +72,9 @@
    \vspace{6pt}
 
    -- Completing a masters and PhD at the University of Cambridge, during which I developed methods and code associated with DFT+\emph{U} and dynamical mean field theory.
-    This work has continued during my postdoc with the development of the BLOR functional and a high-throughput study of Hubbard and Hund's parameters.
    \vspace{6pt}
 
-   -- Developing and releasing the \href{https://koopmans-functionals.org/}{koopmans} code, a package that implements Koopmans functionals. I am the lead author of this code. The ``Advanced Quantum ESPRESSO tutorial: Hubbard and Koopmans functionals from linear response'' tutorial in late 2022 covered the use of this code, and had over 200 attendees. % By imposing a generalized piecewise energy condition, these functionals obtain spectral properties with comparable accuracy to GW at a fraction of the computational cost.
+   -- Designing, developing, and releasing the \href{https://koopmans-functionals.org/}{koopmans} code, a package that implements Koopmans functionals.%  I am the lead author of this code.% The ``Advanced Quantum ESPRESSO tutorial: Hubbard and Koopmans functionals from linear response'' covered the use of this code; the first online edition was held in late 2022 and had over 200 attendees, and an in-person tutorial was held in Pavia (Italy) in 2023.
    \vspace{6pt}
 
    -- Supervising Yannick Schubert's master's project and thesis. He said that ``thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career''.
@@ -84,14 +83,31 @@
 \setlength{\fboxsep}{5pt}%
 \setlength{\fboxrule}{0pt}%
 
+\vspace{-10pt}
 \begin{tabularx}{\textwidth}{
    m{\dimexpr\textwidth-2\tabcolsep}}
    \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Research and Education}} \\
+   \rowcolor{seaborn_bg_grey}
+   \hbox{%
+   \raisebox{-0.5\height}{
+   \begin{minipage}[b]{0.825\linewidth}
+   {\large \textbf{Paul Scherrer Institute, Switzerland}} \\ \textbf{Postdoctoral researcher (1 Nov 2023 -- present)}
+   \end{minipage}
+      }
+   \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.8cm]{logos/psi_trimmed.png}}}
+   } \\
+   \rowcolor{seaborn_bg_grey}%
+   \textit{Supervisor:} Prof. Nicola Marzari
+   \\
+   \rowcolor{seaborn_bg_grey}%
+   The goal of my current postdoc is to accurately predict and interpret experimental spectroscopies, such as ARPES spectra. To this end, I will continue to
+   develop Koopmans functionals and the associated \href{https://koopmans-functionals.org/}{koopmans} code. I aim to make these powerful computational tools accessible and user-friendly.
+   \\
    \rowcolor{seaborn_bg_grey_half}
    \hbox{%
    \raisebox{-0.5\height}{
    \begin{minipage}[b]{0.825\linewidth}
-   {\large \textbf{École polytechnique fédérale de Lausanne, Switzerland}} \\ \textbf{Postdoctoral researcher (1 Nov 2019 -- present)}
+   {\large \textbf{École polytechnique fédérale de Lausanne, Switzerland}} \\ \textbf{Postdoctoral researcher (1 Nov 2019 -- 31 Oct 2023)}
    \end{minipage}
       }
    \raisebox{-0.5\height}{\fbox{\includegraphics[height=0.7cm]{logos/epfl_trimmed.png}}}
@@ -110,7 +126,7 @@
    \textit{Supervisor:} Prof. Nicola Marzari
    \\
    \rowcolor{seaborn_bg_grey_half}%
-   The goal of my current postdoc is to drive the ongoing development of Koopmans functionals. To this end, I have been one of the main developers of the \href{https://koopmans-functionals.org/}{koopmans} code, a package that (a) implements Koopmans functionals in \texttt{Quantum ESPRESSO} and (b) automates the various workflows that these functionals require. I also was involved in the development of the BLOR functional, a DFT+\emph{U}-type corrective functional that enforces the flat plane condition on localised subspaces, dispensing with the need for an ad hoc derivation from the Hubbard model.
+   The primary goal of this postdoc was to drive the ongoing development of Koopmans functionals. To this end, I developed the \href{https://koopmans-functionals.org/}{koopmans} code, a package that (a) implements Koopmans functionals in \texttt{Quantum ESPRESSO} and (b) automates the various workflows that these functionals require.
    \\
    %
    % PhD
@@ -303,7 +319,7 @@
                                  & University of Otago                                                                                                                                                                                                                                                                                                                     \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey}
    \multicolumn{4}{X}{\cellcolor{seaborn_bg_grey}\textbf{\textit{Supervision and mentoring}}}                                                                                                                                                                                                                                                                             \\\noalign{\vskip-0.1pt}
-   \multicolumn{4}{X}{\cellcolor{seaborn_bg_grey}During my postdoc I supervised Yannick Schubert, a master's student. He said that ``thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career.'' One paper has resulted from this work (with a second in preparation).}                                                                                                                                                                                                                       \\*\noalign{\vskip-0.1pt}
+   \multicolumn{4}{X}{\cellcolor{seaborn_bg_grey}During my first postdoc I supervised Yannick Schubert, a master's student. He said that ``thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career.'' One paper has resulted from this work (with a second in preparation).}                                                                                                                                                                                                                       \\*\noalign{\vskip-0.1pt}
    \multicolumn{4}{X}{\cellcolor{seaborn_bg_grey}I also helped Hovan Lee (PhD student from King's College London) with his DMFT calculations on transferrin. A paper resulted from this work, of which I am the last author.}                                                                                                                                        \\*\noalign{\vskip-0.1pt}
    \multicolumn{4}{X}{\cellcolor{seaborn_bg_grey}During the course of my PhD I provided support to two students. I spent a significant amount of time with M.\,A.\,Al-Badri (Masters, and then PhD student from King's College London), teaching him about DMFT and working with him on DMFT calculations on hemocyanin. I have hosted him in Cambridge twice, and visited him at KCL periodically. A paper resulted from this work. I was also the local port-of-call for S. Mansur (PhD student, Cambridge) for support running ONETEP calculations. This work resulted in two publications.}                                                                                                                                                            \\\noalign{\vskip-0.1pt}
    \rowcolor{seaborn_bg_grey_half}
@@ -420,11 +436,13 @@
    %\multicolumn{2}{l}{
       \large\textcolor{seaborn_bg_grey_half}{\textbf{Publications}} \\
    %}
+   \footnotesize A.\,Burgess, \textbf{EBL}, and D.\,D.\,O'Regan, \href{https://arxiv.org/abs/2309.17443}{\textit{The convexity condition of density-functional theory}}. arXiv:2309.17443 (2023)
+   \\
    \footnotesize A.\,Burgess, \textbf{EBL}, and D.\,D.\,O'Regan, \href{https://arxiv.org/abs/2307.16003}{\textit{The tilted-plane structure of the energy of open quantum systems}}. arXiv:2307.16003 (2023)
    \\
    \footnotesize F.\,Haddadi, \textbf{EBL}, I.\,Timrov, N.\,Marzari, and M.\,Gibertini, \href{https://arxiv.org/abs/2306.06286}{\textit{On-site and inter-site Hubbard corrections in magnetic monolayers: The case of FePS\textsubscript{3} and CrI\textsubscript{3}}}. arXiv:2306.06286 (2023)
    \\
-   \footnotesize \textbf{EBL}, N.\,Colonna, R.\,De Gennaro, N.\,L.\,Nguyen, G.\,Borghi, A.\,Ferretti, I.\,Dabo, and N.\,Marzari, \href{https://arxiv.org/abs/2302.07759}{\textit{koopmans: an open-source package for accurately and efficiently predicting spectral properties with Koopmans functionals}}. J.\ Chem.\  Theory Comput.\ \emph{accepted} (2023)
+   \footnotesize \textbf{EBL}, N.\,Colonna, R.\,De Gennaro, N.\,L.\,Nguyen, G.\,Borghi, A.\,Ferretti, I.\,Dabo, and N.\,Marzari, \href{https://doi.org/10.1021/acs.jctc.3c00652}{\textit{koopmans: an open-source package for accurately and efficiently predicting spectral properties with Koopmans functionals}}. J.\ Chem.\  Theory Comput.\ 19 (2023) 7097
    \\
    \footnotesize Y.\,Schubert, N.\,Marzari, and \textbf{EBL}, \href{https://doi.org/10.1063/5.0138610}{\textit{Testing Koopmans spectral functionals on the analytically-solvable Hooke's atom}}. J. Chem. Phys. 158 (2023) 144113
    \\
