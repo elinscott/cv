@@ -1,0 +1,422 @@
+al-Badri2020:
+  type: article
+  title: Superexchange Mechanism and Quantum Many Body Excitations in the Archetypal Di-{Cu} Oxo-Bridge
+  author:
+  - name: Badri
+    given-name: Mohamed Ali
+    prefix: al-
+  - Linscott, Edward
+  - Georges, Antoine
+  - Cole, Daniel J.
+  - Weber, Cédric
+  date: 2020-01-13
+  page-range: 1-8
+  serial-number:
+    doi: 10.1038/s42005-019-0270-1
+    issn: 2399-3650
+  parent:
+    type: periodical
+    title: Commun. Phys.
+    publisher: Nature Publishing Group
+    issue: 1
+    volume: 3
+Burgess2023:
+  type: article
+  title: DFT+U_-Type Functional Derived to Explicitly Address the Flat Plane Condition
+  author:
+  - Burgess, Andrew C.
+  - Linscott, Edward
+  - O'Regan, David D.
+  date: 2023-03-30
+  page-range: L121115
+  serial-number:
+    doi: 10.1103/PhysRevB.107.L121115
+  abstract: A DFT+U-type corrective functional is derived from first principles to enforce the flat plane condition on localized subspaces, thus dispensing with the need for an ad hoc derivation from the Hubbard model. Small, molecular test systems at the dissociated limit are used to compare the functional form against several previously proposed DFT+U-type functionals. The functional derived here yields relative errors below 0.6% in the total energy of the dissociated s-block dimers as well as the dissociated H+5 ring system, a challenging test case in which the asymmetric, tilted flat plane condition applies. In comparison, bare PBE and PBE+U (using Dudarev's 1998 Hubbard functional) yields relative energetic errors as high as 8.0% and 20.5%, respectively.
+  parent:
+    type: periodical
+    title: Phys. Rev. B
+    publisher: American Physical Society
+    issue: 12
+    volume: 107
+Burgess2023a:
+  type: article
+  title: The Convexity Condition of Density-Functional Theory
+  author:
+  - Burgess, Andrew C.
+  - Linscott, Edward
+  - O’Regan, David D.
+  date: 2023-12-01
+  page-range: '211102'
+  serial-number:
+    doi: 10.1063/5.0174159
+    issn: 0021-9606
+  abstract: It has long been postulated that within density-functional theory (DFT), the total energy of a finite electronic system is convex with respect to electron count so that 2Ev[N0] ≤ Ev[N0 − 1] + Ev[N0 + 1]. Using the infinite-separation-limit technique, this Communication proves the convexity condition for any formulation of DFT that is (1) exact for all v-representable densities, (2) size-consistent, and (3) translationally invariant. An analogous result is also proven for one-body reduced density matrix functional theory. While there are known DFT formulations in which the ground state is not always accessible, indicating that convexity does not hold in such cases, this proof, nonetheless, confirms a stringent constraint on the exact exchange–correlation functional. We also provide sufficient conditions for convexity in approximate DFT, which could aid in the development of density-functional approximations. This result lifts a standing assumption in the proof of the piecewise linearity condition with respect to electron count, which has proven central to understanding the Kohn–Sham bandgap and the exchange–correlation derivative discontinuity of DFT.
+  parent:
+    type: periodical
+    title: J. Chem. Phys.
+    issue: 21
+    volume: 159
+Burgess2024:
+  type: article
+  title: Tilted-Plane Structure of the Energy of Finite Quantum Systems
+  author:
+  - Burgess, Andrew C.
+  - Linscott, Edward
+  - O’Regan, David D.
+  date: 2024-07-12
+  page-range: '26404'
+  serial-number:
+    doi: 10.1103/PhysRevLett.133.026404
+  abstract: The piecewise linearity condition on the total energy with respect to the total magnetization of finite quantum systems is derived using the infinite-separation-limit technique. This generalizes the well-known constancy condition, related to static correlation error, in approximate density functional theory. The magnetic analog of Koopmans’ theorem in density functional theory is also derived. Moving to fractional electron count, the tilted-plane condition is derived, lifting certain assumptions in previous works. This generalization of the flat-plane condition characterizes the total energy surface of a finite system for all values of electron count 𝑁 and magnetization 𝑀. This result is used in combination with tabulated spectroscopic data to show the flat-plane structure of the oxygen atom, among others. We find that derivative discontinuities with respect to electron count sometimes occur at noninteger values. A diverse set of tilted-plane structures is shown to occur in 𝑑-orbital subspaces, depending on chemical coordination. General occupancy-based total-energy expressions are demonstrated thereby to be necessarily dependent on the symmetry-imposed degeneracies.
+  parent:
+    type: periodical
+    title: Phys. Rev. Lett.
+    publisher: American Physical Society
+    issue: 2
+    volume: 133
+Colonna2022:
+  type: article
+  title: Koopmans Spectral Functionals in Periodic Boundary Conditions
+  author:
+  - Colonna, Nicola
+  - De Gennaro, Riccardo
+  - Linscott, Edward
+  - Marzari, Nicola
+  date: 2022-09-13
+  page-range: 5435-5448
+  serial-number:
+    doi: 10.1021/acs.jctc.2c00161
+    issn: 1549-9618
+  abstract: Koopmans spectral functionals aim to describe simultaneously ground-state properties and charged excitations of atoms, molecules, nanostructures, and periodic crystals. This is achieved by augmenting standard density functionals with simple but physically motivated orbital-density-dependent corrections. These corrections act on a set of localized orbitals that, in periodic systems, resemble maximally localized Wannier functions. At variance with the original, direct supercell implementation (Phys. Rev. X 2018, 8, 021051), we discuss here (i) the complex but efficient formalism required for a periodic boundary code using explicit Brillouin zone sampling and (ii) the calculation of the screened Koopmans corrections with density functional perturbation theory. In addition to delivering improved scaling with system size, the present development makes the calculation of band structures with Koopmans functionals straightforward. The implementation in the open-source Quantum ESPRESSO distribution and the application to prototypical insulating and semiconducting systems are presented and discussed.
+  parent:
+    type: periodical
+    title: J. Chem. Theory Comput.
+    publisher: American Chemical Society
+    issue: 9
+    volume: 18
+DeGennaro2022:
+  type: article
+  title:
+    value: 'Bloch''s Theorem in Orbital-Density-Dependent Functionals: {Band} Structures from {Koopmans} Spectral Functionals'
+    short: Bloch's Theorem in Orbital-Density-Dependent Functionals
+  author:
+  - De Gennaro, Riccardo
+  - Colonna, Nicola
+  - Linscott, Edward
+  - Marzari, Nicola
+  date: 2022-07-05
+  page-range: '35106'
+  serial-number:
+    doi: 10.1103/PhysRevB.106.035106
+  abstract: Koopmans-compliant functionals provide an orbital-density-dependent framework for an accurate evaluation of spectral properties; they are obtained by imposing a generalized piecewise-linearity condition on the total energy of the system with respect to the occupation of any orbital. In crystalline materials, due to the orbital-density-dependent nature of the functionals, minimization of the total energy to a ground state provides a set of minimizing variational orbitals that are localized and thus break the periodicity of the underlying lattice. Despite this, we show that Bloch symmetry can be preserved and it is possible to describe the electronic states with a band-structure picture, thanks to the Wannier-like character of the variational orbitals. We also present a method to unfold and interpolate the electronic bands from supercell (Γ-point) calculations, which enables us to calculate full band structures with Koopmans-compliant functionals. The results obtained for a set of benchmark semiconductors and insulators show very good agreement with state-of-the-art many-body perturbation theory and experiments, underscoring the reliability of these spectral functionals in predicting band structures.
+  parent:
+    type: periodical
+    title: Phys. Rev. B
+    publisher: American Physical Society
+    issue: 3
+    volume: 106
+Edgcombe2019:
+  type: article
+  title: Analysis of a Capped Carbon Nanotube by Linear-Scaling Density-Functional Theory
+  author:
+  - Edgcombe, C.J.
+  - Masur, S.M.
+  - Linscott, E.B.
+  - Whaley-Baldwin, J.A.J.
+  - Barnes, C.H.W.
+  date: 2019
+  serial-number:
+    doi: 10.1016/j.ultramic.2018.11.007
+    issn: '18792723'
+  abstract: © 2018 Elsevier B.V. The apex region of a capped (5,5) carbon nanotube (CNT) has been modelled with the DFT package ONETEP, using boundary conditions provided by a classical calculation with a conducting surface in place of the CNT. Results from the DFT solution include the Fermi level and the physical distribution and energies of individual orbitals for the CNT tip. Application of an external electric field changes the orbital number of the highest occupied molecular orbital (HOMO) and consequently changes its distribution on the CNT.
+  parent:
+    type: periodical
+    title: Ultramicroscopy
+    publisher: North-Holland
+    volume: 198
+Haddadi2024:
+  type: article
+  title:
+    value: 'On-Site and Intersite {Hubbard} Corrections in Magnetic Monolayers: {The} Case of {FePS3} and {CrI3}'
+    short: On-Site and Intersite {Hubbard} Corrections in Magnetic Monolayers
+  author:
+  - Haddadi, Fatemeh
+  - Linscott, Edward
+  - Timrov, Iurii
+  - Marzari, Nicola
+  - Gibertini, Marco
+  date: 2024-01-24
+  page-range: '14007'
+  serial-number:
+    doi: 10.1103/PhysRevMaterials.8.014007
+  abstract: Hubbard-corrected density-functional theory has proven to be successful in addressing self-interaction errors in 3D magnetic materials. However, the effectiveness of this approach for 2D magnetic materials has not been extensively explored. Here, we use PBEsol+𝑈 and its extensions PBEsol+𝑈+𝑉 to investigate the electronic, structural, and vibrational properties of 2D antiferromagnetic FePS3 and ferromagnetic CrI3, and compare the monolayers with their bulk counterparts. Hubbard parameters (on-site 𝑈 and intersite 𝑉) are computed self-consistently using density-functional perturbation theory, thus avoiding any empirical assumptions. We show that for FePS3, the Hubbard corrections are crucial in obtaining the experimentally observed insulating state with the correct crystal symmetry, also providing vibrational frequencies in good agreement with Raman experiments. For ferromagnetic CrI3, we discuss how a straightforward application of Hubbard corrections worsens the results and introduces a spurious separation between spin-majority and minority conduction bands. Promoting the Hubbard 𝑈 to be a spin-resolved parameter—that is, applying different (first-principles) values to the spin-up and spin-down manifolds—recovers a more physical picture of the electronic bands and delivers the best comparison with experiments.
+  parent:
+    type: periodical
+    title: Phys. Rev. Mater.
+    publisher: American Physical Society
+    issue: 1
+    volume: 8
+Ingall2024:
+  type: article
+  title: Accurate and Efficient Computation of the Fundamental Bandgap of the Vacancy-Ordered Double Perovskite Cs₂TiBr₆
+  author:
+  - Ingall, J. E.
+  - Linscott, Edward
+  - Colonna, Nicola
+  - Page, Alister J.
+  - Keast, Vicki J.
+  date: 2024-06-06
+  page-range: 9217-9228
+  serial-number:
+    doi: 10.1021/acs.jpcc.3c07957
+    issn: 1932-7447
+  abstract: Metal halide perovskites (MHPs) demonstrate an exceptional combination of properties. Rapid progress has extended their application beyond solar cells, light-emitting diodes, photodetectors, and lasers to include memristors, artificial synapse devices, and pressure induced emission. In particular, the vacancy-ordered double perovskite Cs2TiBr6 has been identified as a promising material. The effective characterization of MHPs requires accurate and efficient methods for the calculation of electronic structure. Koopmans compliant (KC) functionals are an accurate and computationally efficient alternative to many-body perturbation theory using the GW approximation but have yet only been validated on a small number of simple materials. In this work, KC functionals were applied to the more complex case of Cs2TiBr6 and gave a zero-temperature fundamental gap of 4.28 eV, in close agreement with the value of 4.44 eV obtained using the accurate, but more computationally expensive, evGW0 approach. The temperature-dependent renormalization of the bandgap has also been investigated and found to be significant. Agreement with the experimental optical bandgaps of 1.76–2.0 eV would also require the inclusion of exciton binding energy.
+  parent:
+    type: periodical
+    title: J. Phys. Chem. C
+    publisher: American Chemical Society
+    issue: 22
+    volume: 128
+Kobayashi2021:
+  type: article
+  title: Virtual Computational Chemistry Teaching Laboratories — Hands-on at a Distance
+  author:
+  - Kobayashi, Rika
+  - Goumans, Theodorus P. M.
+  - Carstensen, N. Ole
+  - Soini, Thomas M.
+  - Marzari, Nicola
+  - Timrov, Iurii
+  - Poncé, Samuel
+  - Linscott, Edward B.
+  - Sewell, Christopher J.
+  - Pizzi, Giovanni
+  - Ramirez, Francisco
+  - Bercx, Marnik
+  - Huber, Sebastiaan P.
+  - Adorf, Carl S.
+  - Talirz, Leopold
+  date: 2021-10-12
+  page-range: 3163-3171
+  serial-number:
+    doi: 10.1021/acs.jchemed.1c00655
+    issn: 0021-9584
+  abstract: 'The COVID-19 pandemic disrupted chemistry teaching practices globally as many courses were forced online, necessitating adaptation to the digital platform. The biggest impact was to the practical component of the chemistry curriculum—the so-called wet lab. Naively, it would be thought that computer-based teaching laboratories would have little problem in making the move. However, this is not the case as there are many unrecognized differences between delivering computer-based teaching in-person and virtually: software issues, technology, and classroom management. Consequently, relatively few “hands-on” computational chemistry teaching laboratories are delivered online. In this paper, we describe these issues in more detail and how they can be addressed, drawing on our experience in delivering a third-year computational chemistry course as well as remote hands-on workshops for the Virtual Winter School on Computational Chemistry and the European BIG-MAP project.'
+  parent:
+    type: periodical
+    title: J. Chem. Educ.
+    publisher: American Chemical Society
+    issue: 10
+    volume: 98
+Lee2022:
+  type: article
+  title: Many-Body Study of Iron({III})-Bound Human Serum Transferrin
+  author:
+  - Lee, Hovan
+  - Weber, Cedric
+  - Linscott, Edward B.
+  date: 2022-05-26
+  page-range: 4419-4425
+  serial-number:
+    doi: 10.1021/acs.jpclett.2c00680
+  abstract: We present the very first density functional theory and dynamical mean field theory calculations of iron-bound human serum transferrin. Peaks in the optical conductivity at 250, 300, and 450 nm were observed, in line with experimental measurements. Spin multiplet analysis suggests that the ground state is a mixed state with high entropy, indicating the importance of strong electronic correlation in this system’s chemistry.
+  parent:
+    type: periodical
+    title: J. Phys. Chem. Lett.
+    publisher: American Chemical Society
+    issue: 20
+    volume: 13
+Linscott2014:
+  type: article
+  title: Thermally Activated Local Collapse of a Flattened Dipolar Condensate
+  author:
+  - Linscott, E. B.
+  - Blakie, P. B.
+  date: 2014
+  page-range: 1-7
+  serial-number:
+    arxiv: 1409.1766v1
+    doi: 10.1103/PhysRevA.90.053605
+    issn: '10941622'
+  parent:
+    type: periodical
+    title: Phys. Rev. A
+    issue: 5
+    volume: 90
+Linscott2018:
+  type: article
+  title: Role of Spin in the Calculation of {Hubbard} {\\emph\{U\}} and {Hund}'s {\\emph\{J\}} Parameters from First Principles
+  author:
+  - Linscott, Edward B.
+  - Cole, Daniel J.
+  - Payne, Michael C.
+  - O'Regan, David D.
+  date: 2018-12-26
+  page-range: '235157'
+  serial-number:
+    doi: 10.1103/PhysRevB.98.235157
+    issn: 2469-9950
+  parent:
+    type: periodical
+    title: Phys. Rev. B
+    publisher: American Physical Society
+    issue: 23
+    volume: 98
+Linscott2020:
+  type: article
+  title: '{ONETEP} + {TOSCAM}: {Uniting} Dynamical Mean Field Theory and Linear-Scaling Density Functional Theory'
+  author:
+  - Linscott, Edward B.
+  - Cole, Daniel J.
+  - Hine, Nicholas D. M.
+  - Payne, Michael C.
+  - Weber, Cédric
+  date: 2020-06-09
+  serial-number:
+    arxiv: '1911.07752'
+    doi: 10.1021/acs.jctc.0c00162
+    issn: 1549-9618
+  abstract: We introduce the unification of dynamical mean field theory (DMFT) and linear-scaling density functional theory (DFT), as recently implemented in ONETEP, a linear-scaling DFT package, and TOSCAM, a DMFT toolbox. This code can account for strongly correlated electronic behavior while simultaneously including the effects of the environment, making it ideally suited for studying complex and heterogeneous systems containing transition metals and lanthanides, such as metalloproteins. We systematically introduce the necessary formalism, which must account for the non-orthogonal basis set used by ONETEP. In order to demonstrate the capabilities of this code, we apply it to carbon monoxide-ligated iron porphyrin and explore the distinctly quantum-mechanical character of the iron \$3d\$ electrons during the process of photodissociation.
+  parent:
+    type: periodical
+    title: J. Chem. Theory Comput.
+    publisher: American Chemical Society (ACS)
+Linscott2023:
+  type: article
+  title:
+    value: 'Koopmans: {An} Open-Source Package for Accurately and Efficiently Predicting Spectral Properties with {Koopmans} Functionals'
+    short: Koopmans
+  author:
+  - Linscott, Edward B.
+  - Colonna, Nicola
+  - De Gennaro, Riccardo
+  - Nguyen, Ngoc Linh
+  - Borghi, Giovanni
+  - Ferretti, Andrea
+  - Dabo, Ismaila
+  - Marzari, Nicola
+  date: 2023-08-23
+  page-range: 7097-7111
+  serial-number:
+    doi: 10.1021/acs.jctc.3c00652
+    issn: 1549-9618
+  abstract: Over the past decade we have developed Koopmans functionals, a computationally efficient approach for predicting spectral properties with an orbital-density-dependent functional framework. These functionals impose a generalized piecewise linearity condition to the entire electronic manifold, ensuring that orbital energies match the corresponding electron removal/addition energy differences (in contrast to semilocal DFT, where a mismatch between the two lies at the heart of the band gap problem and, more generally, the unreliability of Kohn–Sham orbital energies). This strategy has proven to be very powerful, yielding molecular orbital energies and solid-state band structures with comparable accuracy to many-body perturbation theory but at greatly reduced computational cost while preserving a functional formulation. This paper reviews the theory of Koopmans functionals, discusses the algorithms necessary for their implementation, and introduces koopmans, an open-source package that contains all of the code and workflows needed to perform Koopmans functional calculations and obtain reliable spectral properties of molecules and materials.
+  parent:
+    type: periodical
+    title: J. Chem. Theory Comput.
+    publisher: American Chemical Society
+    issue: 20
+    volume: 19
+Masur2020:
+  type: article
+  title: Modelling a Capped Carbon Nanotube by Linear-Scaling Density-Functional Theory
+  author:
+  - Masur, S. M.
+  - Linscott, E. B.
+  - Edgcombe, C. J.
+  date: 2020-05-01
+  page-range: '146896'
+  serial-number:
+    doi: 10.1016/j.elspec.2019.146896
+    issn: 0368-2048
+  abstract: The apex region of a capped (5,5) carbon nanotube (CNT) has been modelled with the DFT package ONETEP, using boundary conditions provided by a classical calculation with a conducting surface in place of the CNT. Results from the DFT solution include the spatial distribution of charge density, the changes to the highest occupied molecular orbital (HOMO) induced by an external field and a comparison of calculations of total potential energy E with and without exchange-correlation energy EXC. The contribution to the work function from exchange and correlation effects is found to be nearly as much again as that from a purely electrostatic calculation.
+  parent:
+    type: periodical
+    title: J. Electron Spectrosc. Relat. Phenom.
+    volume: 241
+    parent:
+      type: periodical
+      title: Sources, {Interaction} with {Matter}, {Detection} and {Analysis} of {Low Energy Electrons} ({SIMDALEE2})
+Moore2024:
+  type: article
+  title: High-Throughput Determination of {Hubbard} {\\emph\{U\}} and {Hund} {\\emph\{J\}} Values for Transition Metal Oxides via the Linear Response Formalism
+  author:
+  - Moore, Guy C.
+  - Horton, Matthew K.
+  - Linscott, Edward
+  - Ganose, Alexander M.
+  - Siron, Martin
+  - O'Regan, David D.
+  - Persson, Kristin A.
+  date: 2024-01-29
+  page-range: '14409'
+  serial-number:
+    doi: 10.1103/PhysRevMaterials.8.014409
+  abstract: DFT+𝑈 provides a convenient, cost-effective correction for the self-interaction error (SIE) that arises when describing correlated electronic states using conventional approximate density functional theory (DFT). The success of a DFT+𝑈(+𝐽) calculation hinges on the accurate determination of its Hubbard 𝑈 and Hund 𝐽 parameters, and the linear response (LR) methodology has proven to be computationally effective and accurate for calculating these parameters. This study provides a high-throughput computational analysis of the 𝑈 and 𝐽 values for transition metal 𝑑-electron states in a representative set of over 1000 magnetic transition metal oxides (TMOs), providing a frame of reference for researchers who use DFT+𝑈 to study transition metal oxides. In order to perform this high-throughput study, an atomate workflow is developed for calculating 𝑈 and 𝐽 values automatically on massively parallel supercomputing architectures. To demonstrate an application of this workflow, the spin-canting magnetic structure and unit cell parameters of the multiferroic olivine LiNiPO4 are calculated using the computed Hubbard 𝑈 and Hund 𝐽 values for Ni−𝑑 and O−𝑝 states, and are compared with experiment. Both the Ni−𝑑𝑈 and 𝐽 corrections have a strong effect on the Ni-moment canting angle. Additionally, including a O−𝑝𝑈 value results in a significantly improved agreement between the computed lattice parameters and experiment.
+  parent:
+    type: periodical
+    title: Phys. Rev. Mater.
+    publisher: American Physical Society
+    issue: 1
+    volume: 8
+Prentice2020:
+  type: article
+  title: The {ONETEP} Linear-Scaling Density Functional Theory Program
+  author:
+  - Prentice, Joseph C. A.
+  - Aarons, Jolyon
+  - Womack, James C.
+  - Allen, Alice E. A.
+  - Andrinopoulos, Lampros
+  - Anton, Lucian
+  - Bell, Robert A.
+  - Bhandari, Arihant
+  - Bramley, Gabriel A.
+  - Charlton, Robert J.
+  - Clements, Rebecca J.
+  - Cole, Daniel J.
+  - Constantinescu, Gabriel
+  - Corsetti, Fabiano
+  - Dubois, Simon M.-M.
+  - Duff, Kevin K. B.
+  - Escartín, José María
+  - Greco, Andrea
+  - Hill, Quintin
+  - Lee, Louis P.
+  - Linscott, Edward
+  - O’Regan, David D.
+  - Phipps, Maximillian J. S.
+  - Ratcliff, Laura E.
+  - Serrano, Álvaro Ruiz
+  - Tait, Edward W.
+  - Teobaldi, Gilberto
+  - Vitale, Valerio
+  - Yeung, Nelson
+  - Zuehlsdorff, Tim J.
+  - Dziedzic, Jacek
+  - Haynes, Peter D.
+  - Hine, Nicholas D. M.
+  - Mostofi, Arash A.
+  - Payne, Mike C.
+  - Skylaris, Chris-Kriton
+  date: 2020-05-07
+  page-range: '174111'
+  serial-number:
+    doi: 10.1063/5.0004445
+    issn: 0021-9606
+  abstract: We present an overview of the onetep program for linear-scaling density functional theory (DFT) calculations with large basis set (plane-wave) accuracy on parallel computers. The DFT energy is comp...
+  parent:
+    type: periodical
+    title: J. Chem. Phys.
+    publisher: AIP Publishing LLCAIP Publishing
+    issue: 17
+    volume: 152
+Schubert2023:
+  type: article
+  title: Testing {Koopmans} Spectral Functionals on the Analytically Solvable {Hooke}’s Atom
+  author:
+  - Schubert, Yannick
+  - Marzari, Nicola
+  - Linscott, Edward
+  date: 2023-04-12
+  page-range: '144113'
+  serial-number:
+    doi: 10.1063/5.0138610
+    issn: 0021-9606
+  abstract: Koopmans spectral functionals are a class of orbital-density-dependent functionals designed to accurately predict spectroscopic properties. They do so markedly better than their Kohn–Sham density-functional theory counterparts, as demonstrated in earlier works on benchmarks of molecules and bulk systems. This work is a complementary study where—instead of comparing against real, many-electron systems—we test Koopmans spectral functionals on Hooke’s atom, a toy two-electron system that has analytical solutions for particular strengths of its harmonic confining potential. As these calculations clearly illustrate, Koopmans spectral functionals do an excellent job of describing Hooke’s atom across a range of confining potential strengths. This work also provides broader insights into the features and capabilities of Koopmans spectral functionals more generally.
+  parent:
+    type: periodical
+    title: J. Chem. Phys.
+    issue: 14
+    volume: 158
+
