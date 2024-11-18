@@ -1,10 +1,14 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.3": cvSection
+#import "@preview/brilliant-cv:2.0.3": cvSection, regularColors
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 
 
 #cvSection("Summary", highlighted: false)
+
+#set text(
+  fill: regularColors.lightgray
+)
 
 I am a postdoctoral researcher at the Paul Scherrer Institute in the group of Prof. Nicola Marzari, researching methods to improve density functional theory (DFT). Taking inspiration from the properties of the exact functional and DFT's systematic errors, I (and others) have shown how to construct inexpensive corrections that drastically improve DFT's performance.
 

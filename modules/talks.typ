@@ -1,10 +1,12 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.3": cvSection
+#import "@preview/brilliant-cv:2.0.3": cvSection, regularColors
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 
 
 #cvSection("Selected Talks", highlighted: false)
+#set text(fill: regularColors.lightgray)
+#show heading: set text(black)
 
 #grid(columns: 4, column-gutter: 1em, row-gutter: 0.8em,
    [2025], [Psi-k 2025 Conference], [Lausanne, Switzerland], [invited talk],

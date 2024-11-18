@@ -1,10 +1,12 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.3": cvSection
+#import "@preview/brilliant-cv:2.0.3": cvSection, regularColors
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 
 
 #cvSection("Referees", highlighted: false)
+#set text(fill: regularColors.lightgray)
+#show heading: set text(black)
 
 #columns(2, 
 [== Prof. Nicola Marzari

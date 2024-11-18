@@ -1,12 +1,17 @@
 // Imports
-#import "@preview/brilliant-cv:2.0.3": cvSection
+#import "@preview/brilliant-cv:2.0.3": cvSection, regularColors
 #let metadata = toml("../metadata.toml")
 #let cvSection = cvSection.with(metadata: metadata)
 
 
 #cvSection("Skills", highlighted: false)
 
+#set text(fill: regularColors.lightgray)
+#show heading: set text(black)
+
 == Programming
+
+
 I am a confident programmer, with experience in various languages (including Python and Fortran) and implementing complex algorithms (primarily in the context of electronic structure calculations). I routinely employ good programming practices such as testing, documentation, and CI/CD.
 
 Using these skills, I developed #link("https://koopmans-functionals.org")[koopmans], an open-source package for performing Koopmans functional calculations. I am a contributor to #link("https://www.onetep.org")[ONETEP], a commercially available scientific DFT code, and I was a developer of TOSCAM, a publically available DMFT code.
