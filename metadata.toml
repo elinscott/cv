@@ -68,8 +68,8 @@ language = "en"
         #     # image = "" # Example: image("./path/to/image.png")
         #     text = "ORCiD"
         #     link = "https://orcid.org/0000-0002-4967-9873"
-        [personal.info.custom-4]
-            text = "🏢 Paul Scherrer Institute, Forschungsstrasse 111, 5232 Villigen PSI, Switzerland"
+        # [personal.info.custom-4]
+        #     text = "🏢 Paul Scherrer Institute, Forschungsstrasse 111, 5232 Villigen PSI, Switzerland"
 
 # add a new section if you want to include the language of your choice
 # i.e. [[lang.ru]]

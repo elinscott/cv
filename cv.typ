@@ -18,6 +18,7 @@
 #importModules((
   "summary",
   "research",
+  "awards",
   "skills",
   "talks",
   "publications",

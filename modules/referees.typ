@@ -10,26 +10,30 @@
 
 #columns(2, 
 [== Prof. Nicola Marzari
+_Postdoc Supervisor, 2019 - present_
+
 Theory and Simulation of Materials \
 École Polytechnique Fédérale de Lausanne \
 Route Cantonale \
 1015 Lausanne \
 Switzerland \
 
-Email: #link("mailto:nicola.marzari@epfl.ch") \
-Phone: +41 (0)21 693 1129
+#link("mailto:nicola.marzari@epfl.ch") \
++41 (0)21 693 1129
 
 #colbreak()
 
 == Prof. Mike Payne
+_Master's and PhD Supervisor, 2014 - 2019_
+
 Theory of Condensed Matter \
 University of Cambridge \
 19 J J Thomson Avenue \
 Cambridge CB3 0HE \
 United Kingdom \
 
-Email: #link("mailto:mcp1@cam.ac.uk") \
-Phone: +44 (0)1223 337254
+#link("mailto:mcp1@cam.ac.uk") \
++44 (0)1223 337254
 ],
 )
 
