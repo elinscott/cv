@@ -32,7 +32,7 @@ In addition to my formal training in scientific computing, I voluntarily attende
 == Teaching
 #grid(columns: 7, column-gutter: 1em, row-gutter: 0.8em,
   [_role_], [_course_], [_level_], [_institution_], [_number of students_], [_contact hours_], [_year(s)_],
-  [Lab demonstrator], link("https://edu.epfl.ch/coursebook/en/atomistic-and-quantum-simulations-of-materials-MSE-468")[Atomistic and quantum simulation of materials], [master's], [EPFL], [two-on-30 (approx)], [2/week for 3 weeks], [2021-23], 
+  [Lab demonstrator], link("https://edu.epfl.ch/coursebook/en/atomistic-and-quantum-simulations-of-materials-MSE-468")[Atomistic and quantum simulation of materials], [master's], [EPFL], [two-on-30 (approx)], [2/week for 3 weeks], [2021--23], 
   [Supervisor], [Thermal and statistical physics], [third-year], [Cambridge], [one-on-three or -four], [3/week for 12 weeks], [2017],
   [Supervisor], link("https://www.natsci.tripos.cam.ac.uk/subject-information/part1b/phy")[Exp. methods, oscillations, waves, optics, quantum mech., and condensed matter], [second-year], [Cambridge], [one-on-three], [3/week for 36 weeks], [2016],
   [Supervisor], link("https://www.natsci.tripos.cam.ac.uk/subject-information/part1a/phy")[Physics], [first year], [Cambridge], [one-on-three], [3/week for 36 weeks], [2015],
@@ -40,9 +40,9 @@ In addition to my formal training in scientific computing, I voluntarily attende
 )
 
 == Supervision and mentoring
-I am currently co-supervising Marija Stojkovic (PhD; EPFL; 2021 - present).
+I am currently co-supervising Marija Stojkovic (PhD; EPFL; 2021--present).
 
-I supervised Yannick Schubert (Masters; ETHZ; 2021-22). He said that "thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career." One paper has resulted from this work (with a second under review).
+I supervised Yannick Schubert (Masters; ETHZ; 2021--22). He said that "thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career." Two papers resulted from this work.
 
 While not formally being their supervisor, I also helped...
 - F. Haddadi (PhD; EPFL) with DFT+_U_+_J_ calculations; a paper resulted from this work.
@@ -56,5 +56,5 @@ I have written and received several grants (e.g. an EPSRC capital grant for over
 == Service and Outreach
 - I have reviewed articles for _Phys. Rev. Lett._ and _Phys. Rev. B_
 - I have helped run tutorials on koopmans #link("https://youtu.be/uaHWhCZoDAk")[🎥], Quantum ESPRESSO, and ONETEP
-- I am on the PhD committee of D. Tang (University of Zurich; 2023 - present)
+- I am on the PhD committee of D. Tang (University of Zurich; 2023--present)
 - I assisted at information days at EPFL and Cambridge, introducing high school students to computational materials science research
