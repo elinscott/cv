@@ -14,7 +14,7 @@ I am a postdoctoral researcher at the Paul Scherrer Institute in the group of Pr
 
 Career highlights thus far include...
 - Receiving (a) the _Prince of Wales Award_ for the most outstanding student completing an undergraduate degree at the University of Otago, and (b) the _Cambridge-Rutherford Memorial Scholarship_ to enable doctoral studies at the University of Cambridge.
-- Designing, developing, and releasing the #link("https://koopmans-functionals.org/")[koopmans] code, a package that implements Koopmans functionals. I am the lead author of this code. The code has attracted wide interest: an online tutorial had over 200 attendees; it is being used by industrial partners.
+- Designing, developing, and releasing the #link("https://koopmans-functionals.org/")[koopmans] code, a package that implements Koopmans functionals. I am the lead author of this code. The code has attracted wide interest: an online tutorial had over 200 attendees; it is being used by Fortune Global 500 industrial partners.
 - Supervising Yannick Schubert's master's project and thesis. He said that "thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career".
 
 //   \cellcolor{seaborn_blue}\large\textbf{\textcolor{seaborn_bg_grey_half}{Summary}} \\

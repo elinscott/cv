@@ -33,7 +33,7 @@
   </macro>
   <macro name="author">
     <names variable="author">
-       <name sort-separator=", " delimiter=", " and="symbol" et-al-min="100" initialize-with=". " />
+       <name sort-separator=", " delimiter=", " and="symbol" et-al-min="10" initialize-with=". " />
       <label form="short" prefix=", "/>
       <et-al font-style="italic"/>
     </names>

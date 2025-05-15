@@ -24,15 +24,15 @@ In addition to my formal training in scientific computing, I voluntarily attende
    [_Used daily_], [Python, Fortran, Bash],
    [_Used daily_], [vim, git, vscode, Quantum ESPRESSO, ASE, LaTeX, SLURM],
    [_Some experience_], [C++, MPI, OpenMP, MATLAB,],
-   [_Extensive experience_], [scikit-learn, pandas, ONETEP, PyMol, typst],
+   [_Extensive experience_], [pandas, ONETEP, PyMol, typst],
    [], [CUDA],
-   [_Some experience_], [CASTEP, Siesta, Maestro, VMD, LAMMPS, spglib, VESTA, Blender],
+   [_Some experience_], [Maestro, VMD, LAMMPS, spglib, VESTA, Blender, scikit-learn],
 )
 
 == Teaching
 #grid(columns: 7, column-gutter: 1em, row-gutter: 0.8em,
   [_role_], [_course_], [_level_], [_institution_], [_number of students_], [_contact hours_], [_year(s)_],
-  [Lab demonstrator], link("https://edu.epfl.ch/coursebook/en/atomistic-and-quantum-simulations-of-materials-MSE-468")[Atomistic and quantum simulation of materials], [master's], [EPFL], [two-on-30 (approx)], [2/week for 3 weeks], [2021--23], 
+  [Lab demonstrator], link("https://edu.epfl.ch/coursebook/en/atomistic-and-quantum-simulations-of-materials-MSE-468")[Atomistic and quantum simulation of materials], [master's], [EPFL], [two-on-30 (approx)], [2/week for 3 weeks], [2021--25], 
   [Supervisor], [Thermal and statistical physics], [third-year], [Cambridge], [one-on-three or -four], [3/week for 12 weeks], [2017],
   [Supervisor], link("https://www.natsci.tripos.cam.ac.uk/subject-information/part1b/phy")[Exp. methods, oscillations, waves, optics, quantum mech., and condensed matter], [second-year], [Cambridge], [one-on-three], [3/week for 36 weeks], [2016],
   [Supervisor], link("https://www.natsci.tripos.cam.ac.uk/subject-information/part1a/phy")[Physics], [first year], [Cambridge], [one-on-three], [3/week for 36 weeks], [2015],
@@ -40,7 +40,7 @@ In addition to my formal training in scientific computing, I voluntarily attende
 )
 
 == Supervision and mentoring
-I am currently co-supervising Marija Stojkovic (PhD; EPFL; 2021--present).
+I am currently co-supervising Marija Stojkovic (PhD; EPFL; 2021--present). So far, one manuscript has resulted from this work.
 
 I supervised Yannick Schubert (Masters; ETHZ; 2021--22). He said that "thanks to (Edward's) good choice of topics and guidance... achieving good results felt easy. Working with (Edward) was very motivating and a perfect start to a scientific career." Two papers resulted from this work.
 
